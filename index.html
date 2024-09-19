@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Приходи 3 октября на сайт, чтобы участвовать в акции и выиграть крутые призы!" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./assets/img/icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/icons/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/icons/apple-touch-icon-180x180.png" />
+    <link rel="stylesheet" href="./assets/css/styles.min.css" />
+    <title>Алёнка</title>
+  </head>
+  <body class="body">
+    <!--Preloader-->
+    <div class="preloader">
+      <div class="space-bg">
+        <img src="./assets/img/hero/bg_lines.svg" alt="Фоновые линии" class="bg-lines" />
+      </div>
+      <div class="preloader__rocket">
+        <div class="rocket">
+          <img src="./assets/img/hero/raketa2.png" alt="Ракета" class="animated" />
+          <img src="./assets/img/hero/raketa.png" alt="Ракета" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="section-container">
+        <!--Logo-->
+        <div class="logo">
+          <a href="#" data-scrollto="section--hero" class="logo-alenka">
+            <img src="./assets/img/svg/logo.svg" alt="Алёнка" />
+          </a>
+          <a href="#" target="_blank" class="logo-magnit">
+            <picture>
+              <source media="(min-width:768px)" srcset="./assets/img/svg/logo_magnit.svg" />
+              <source media="(max-width:767px)" srcset="./assets/img/svg/logo_magnit_mobil.svg" />
+              <img src="./assets/img/svg/logo_magnit_mobil.svg" alt="Магнит" />
+            </picture>
+          </a>
+        </div>
+        <!--Navigation-->
+        <div class="menu-backdrop" data-js="menu-backdrop">
+          <div class="menu-body">
+            <nav class="menu">
+              <menu class="menu__list">
+                <li><a href="#" class="menu__link" data-history>История</a></li>
+                <li><a href="#" class="menu__link" data-scrollto="section--rules">Правила</a></li>
+                <li><a href="#" class="menu__link" data-scrollto="section--prizes">Призы</a></li>
+                <li><a href="#" class="menu__link" data-scrollto="scrollto--test">Тест</a></li>
+                <li><a href="#" class="menu__link" data-scrollto="section--winners">Победители</a></li>
+                <li><a href="#" class="menu__link" data-modal="callback">Обратная связь</a></li>
+                <li>
+                  <a href="#" class="button button--blue" data-modal="login"> <img src="./assets/img/svg/lk.svg" alt="Алёнка" /> <span>Вход</span></a>
+                </li>
+              </menu>
+            </nav>
+          </div>
+        </div>
+        <!--Header buttons-->
+        <div class="header__buttons">
+          <button type="button" data-modal="сheque" class="button button--small">
+            <span>Загрузить чек</span>
+          </button>
+          <a href="#" class="button button--icon" data-modal="login">
+            <img src="./assets/img/svg/lk.svg" alt="Алёнка" />
+          </a>
+          <button type="button" class="burger" data-js="burger"><span>burger</span></button>
+        </div>
+      </div>
+      <div class="header__rocket cube">
+        <div class="rocket">
+          <img src="./assets/img/hero/raketa2.png" alt="Ракета" class="animated" />
+          <img src="./assets/img/hero/raketa.png" alt="Ракета" />
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!--Section--HERO-->
+      <section class="section section--hero">
+        <div class="space-bg">
+          <div class="stars-sky"></div>
+          <div class="stars-sky"></div>
+          <img src="./assets/img/hero/meteor.png" alt="Падающая звезда" class="meteor" />
+          <img src="./assets/img/hero/meteor.png" alt="Падающая звезда" class="meteor" />
+          <img src="./assets/img/hero/bg_lines.svg" alt="Фоновые линии" class="bg-lines" />
+        </div>
+
+        <div class="section-container">
+          <div class="hero">
+            <div class="hero__text">
+              <a href="#" target="_blank" class="magnet-logo">
+                <img src="./assets/img/svg/magnet.svg" alt="Логотип Алёнка" />
+              </a>
+
+              <h1 class="title title--h1">Отправляйся <br />в космическую одиссею с Алёнкой</h1>
+              <p class="subtitle">Создай свой межпланетный аватар с новым вкусом шоколада Алёнка</p>
+            </div>
+            <div class="hero__image">
+              <div class="hero__image-wrapper cube">
+                <div class="heroImageScene">
+                  <img src="./assets/img/hero/alenka.png" alt="Алёнка" class="animated" />
+                  <img src="./assets/img/hero/alenka_bg.png" alt="Алёнка" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" data-scrollto="section--rules" class="scroll-down">
+            <img src="./assets/img/gif/arrow.gif" alt="Логотип Алёнка" />
+          </a>
+        </div>
+
+        <div class="section-container section--rules" id="rules">
+          <ul class="rules">
+            <li>
+              <h2 class="title title--h3">Купи</h2>
+              <p>в сети Магнит новый <br />вкус шоколада Алёнка <br />«Взрывная карамель»</p>
+            </li>
+            <li>
+              <h2 class="title title--h3">Посмотри</h2>
+              <p>историю Алёнки <br />в космосе</p>
+            </li>
+            <li>
+              <h2 class="title title--h3">Узнай</h2>
+              <p>кто ты из шоколадной <br />вселенной «Взрывная <br />карамель»!</p>
+            </li>
+            <li>
+              <h2 class="title title--h3">Регистрируй</h2>
+              <p>чеки на сайте и <br />выигрывай ценные <br />призы каждую неделю</p>
+              <button type="button" class="button" data-modal="сheque">Загрузить чек</button>
+            </li>
+            <li>
+              <h2 class="title title--h3">Получи</h2>
+              <p>шанс выиграть <br />главный приз</p>
+            </li>
+          </ul>
+        </div>
+
+        <!--RUNNING TEXT-->
+        <div class="hero__runtext">
+          <div class="runText" data-runtext="left">
+            <div class="runText__inner">&nbsp;призы&nbsp;призы&nbsp;призы&nbsp;призы&nbsp;призы</div>
+            <div class="runText__inner">призы&nbsp;призы&nbsp;призы&nbsp;призы&nbsp;призы&nbsp;</div>
+          </div>
+        </div>
+
+        <div class="planet planet--small cube">
+          <img src="./assets/img/hero/planet_small.png" alt="Алёнка" />
+        </div>
+
+        <div class="planet planet--big cube">
+          <img src="./assets/img/hero/planet_big.png" alt="Алёнка" />
+        </div>
+      </section>
+
+      <!--Section--PRIZES-->
+      <section class="section section--prizes" id="preise">
+        <picture class="yellow-gradient">
+          <source media="(min-width:1024px)" srcset="./assets/img/svg/bg.svg" />
+          <source media="(max-width:1023px)" srcset="./assets/img/svg/bg_mobil.svg" />
+          <img src="./assets/img/svg/bg_mobil.svg" alt="Желтый градиент" />
+        </picture>
+        <!-- <img src="./assets/img/svg/bg.svg" alt="Желтый градиент" class="yellow-gradient" /> -->
+        <div class="section-container">
+          <div class="prizes">
+            <div class="prizes__primary">
+              <article class="prize">
+                <h3 class="title title--h4">Главный приз</h3>
+                <div class="prize__image">
+                  <img src="./assets/img/prizes/1.png" alt="Приз" />
+                </div>
+                <h4 class="title title--h4">Телескоп</h4>
+                <p>В прямом эфире будут выбраны <br />3 победителя среди зарегистрировавших чеки <br />за всю кампанию</p>
+              </article>
+            </div>
+
+            <div class="prize__list">
+              <h2 class="title title--h4">Еженедельные призы</h2>
+              <ul>
+                <li>
+                  <article class="prize">
+                    <div class="prize__image">
+                      <img src="./assets/img/prizes/2.png" alt="Приз" />
+                    </div>
+                    <h4 class="title title--h4">Ночник Астропланетарий</h4>
+                    <p>Каждую среду в течение проекта будут выбираться 6 победителей по зарегистрированным чекам за прошедшую неделю</p>
+                  </article>
+                </li>
+                <li>
+                  <article class="prize">
+                    <div class="prize__image">
+                      <img src="./assets/img/prizes/3.png" alt="Приз" />
+                    </div>
+                    <h4 class="title title--h4">Космический конструктор</h4>
+                    <p>Каждую среду в течение проекта будут выбираться 7 победителей по чекам за прошедшую неделю</p>
+                  </article>
+                </li>
+                <li>
+                  <article class="prize">
+                    <div class="prize__image">
+                      <img src="./assets/img/prizes/4.png" alt="Приз" />
+                    </div>
+                    <h4 class="title title--h4">Набор продукции Алёнка</h4>
+                    <p>
+                      Еженедельно будут выбирать 13 победителей, зарегистрировавших чек и поделившихся космической аватаркой в ВК с отметкой бренда
+                    </p>
+                  </article>
+                </li>
+              </ul>
+            </div>
+
+            <button type="button" data-modal="сheque" class="button button--big">
+              <span>ЗАРЕГИСТРИРОВАТЬ ЧЕК</span>
+              <img src="./assets/img/svg/arr-right.svg" alt="arrow" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--saturn">
+        <div class="planet planet--saturn cube">
+          <img src="./assets/img/hero/planet_saturn.png" alt="Алёнка" />
+        </div>
+      </section>
+
+      <!--Section--TEST-->
+      <section class="section section--test" id="test">
+        <div class="space-bg">
+          <div class="stars-sky"></div>
+          <div class="stars-sky"></div>
+          <img src="./assets/img/hero/meteor.png" alt="Падающая звезда" class="meteor" />
+          <img src="./assets/img/hero/meteor.png" alt="Падающая звезда" class="meteor" />
+        </div>
+
+        <div class="section-container">
+          <div class="test">
+            <h2 class="title title--h2 scrollto--test">
+              <strong>Узнай кто ты</strong><br />
+              из шоколадной вселенной «Взрывная карамель»!
+            </h2>
+            <div class="steps">
+              <p class="step-counter"><span data-js="step-counter">1</span>/3</p>
+
+              <!--STEP 1-->
+              <div class="step active visible" data-step="1">
+                <div class="step__text">
+                  <h2 class="title">Укажи свой пол:</h2>
+                </div>
+                <div class="step__actions">
+                  <button type="button" class="button button--biege full" data-input="sex" data-tostep="2">Мужской</button>
+                  <button type="button" class="button button--biege full" data-input="sex" data-tostep="2">Женский</button>
+                </div>
+              </div>
+
+              <!--STEP 2-->
+              <div class="step" data-step="2">
+                <div class="step__text">
+                  <h2 class="title">Выбери какой космический вкус тебе нравится / <br />в какой вселенной <br />ты бы хотел себя увидеть</h2>
+                </div>
+                <div class="step__actions">
+                  <button type="button" class="button button--biege full" data-input="taste" data-tostep="3">Взрывная карамель</button>
+                  <button type="button" class="button button--biege full" data-input="taste" data-tostep="3">Хрустящая сказка</button>
+                  <button type="button" class="button button--biege full" data-input="taste" data-tostep="3">Солёный крекер</button>
+                  <button type="button" class="button button--biege full" data-input="taste" data-tostep="3">Разноцветное драже</button>
+                </div>
+              </div>
+
+              <!--STEP 3-->
+              <div class="step" data-step="3">
+                <!--substep 1-->
+                <div class="step active visible" data-substep="1">
+                  <!--Показываем если мы НЕ зарегистрированы-->
+                  <!-- <div class="step__text full">
+                    <h3 class="title">Зарегистрируйся для того чтобы узнать кто ты из шоколадной вселенной «Взрывная карамель»!</h3>
+                    <button type="button" class="button button--biege" data-modal="registration">Зарегистрироваться</button>
+                  </div> -->
+
+                  <!--Показываем если мы зарегистрированы-->
+                  <div class="step__text">
+                    <h3 class="title">Загрузи свою фотографию и узнай кто ты из вселенной «Взрывная карамель»</h3>
+                  </div>
+                  <div class="step__actions">
+                    <form action="#" method="POST" id="test-form" class="form" enctype="multipart/form-data" novalidate>
+                      <input type="hidden" name="sex" class="sex" value="" />
+                      <input type="hidden" name="taste" class="taste" value="" />
+                      <div class="download-file">
+                        <label class="label-for-file">
+                          <input type="file" name="photo" class="input input-file" required />
+                          <img src="./assets/img/form/file.png" alt="Алёнка" />
+                          <p class="label__text" data-text="перетащите фото в это поле">перетащите фото в это поле</p>
+                        </label>
+                      </div>
+                      <button type="submit" class="button button--biege full">Сгенерировать</button>
+                    </form>
+                  </div>
+                  <div class="step__text">
+                    <p>
+                      Лимит на количество образов 5 штук. Пожалуйста, убедись, что на фотографии именно ты, лицо не перекрыто и повёрнуто на камеру.
+                    </p>
+                    <b>израсходовано 3/5 попыток</b>
+                  </div>
+                </div>
+
+                <!--substep 3-->
+                <div class="step" data-substep="3">
+                  <div class="step__text final">
+                    <div class="rocket">
+                      <img src="./assets/img/hero/raketa2.png" alt="Ракета" class="animated" />
+                      <img src="./assets/img/hero/raketa.png" alt="Ракета" />
+                    </div>
+                    <b>
+                      Ракета в пути и примеряет на тебя новый образ! Обычно это быстро, но при турбулентности может занять до 12 часов. Фотографию
+                      можно будет скачать в личном кабинете.
+                    </b>
+                    <button type="button" class="button button--biege" data-toStep="1">В начало</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--RUNNING TEXT-->
+        <div class="hero__runtext">
+          <div class="runText" data-runtext="left">
+            <div class="runText__inner">&nbsp;победители победители</div>
+            <div class="runText__inner">победители победители&nbsp;</div>
+          </div>
+        </div>
+        <div class="planet planet--medium cube">
+          <img src="./assets/img/hero/planet_medium.png" alt="Алёнка" />
+        </div>
+      </section>
+
+      <!--Section--WINNERS-->
+      <section class="section section--winners" id="winners">
+        <picture class="yellow-gradient">
+          <source media="(min-width:1024px)" srcset="./assets/img/svg/winners_bg.svg" />
+          <source media="(max-width:1023px)" srcset="./assets/img/svg/winners_bg_mobil.svg" />
+          <img src="./assets/img/svg/winners_bg_mobil.svg" alt="Желтый градиент" />
+        </picture>
+        <div class="section-container">
+          <!--Winners-->
+          <table class="winnersTable">
+            <thead>
+              <tr>
+                <th>Дата</th>
+                <th>Имя</th>
+                <th>Контакт</th>
+                <th>Приз</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>дд.мм.гггг</td>
+                <td>Марианна К.</td>
+                <td>+XXXXXXXX***</td>
+                <td>Набор продукции Алёнка</td>
+              </tr>
+              <tr>
+                <td>дд.мм.гггг</td>
+                <td>Марианна К.</td>
+                <td>+XXXXXXXX***</td>
+                <td>Конструктор</td>
+              </tr>
+              <tr>
+                <td>дд.мм.гггг</td>
+                <td>Марианна К.</td>
+                <td>+XXXXXXXX***</td>
+                <td>Ночник</td>
+              </tr>
+              <tr>
+                <td>дд.мм.гггг</td>
+                <td>Марианна К.</td>
+                <td>+XXXXXXXX***</td>
+                <td>Телескоп</td>
+              </tr>
+              <tr>
+                <td>дд.мм.гггг</td>
+                <td>Марианна К.</td>
+                <td>+XXXXXXXX***</td>
+                <td>Набор продукции Алёнка</td>
+              </tr>
+              <tr>
+                <td>дд.мм.гггг</td>
+                <td>Марианна К.</td>
+                <td>+XXXXXXXX***</td>
+                <td>Набор продукции Алёнка</td>
+              </tr>
+            </tbody>
+          </table>
+          <!--winners pagination-->
+          <div class="pagination">
+            <a href="#" class="pagination-btn" aria-label="left pagination">
+              <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 1L2 7.5L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="#" class="pagination-btn active">1</a>
+            <a href="#" class="pagination-btn">2</a>
+            <a href="#" class="pagination-btn">3</a>
+            <a href="#" class="pagination-btn">4</a>
+            <a href="#" class="pagination-btn" aria-label="right pagination">
+              <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7.5L1 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="space-bg">
+        <div class="stars-sky"></div>
+        <div class="stars-sky"></div>
+      </div>
+      <div class="section-container">
+        <p>Copyright &copy; 2016-2024 Интернет-магазин кондитерских изделий «Алёнка»</p>
+        <a href="https://www.alenka.ru/information/" target="_blank">Информация о Холдинге</a>
+      </div>
+    </footer>
+
+    <!-- MODALS -->
+    <div class="backdrop">
+      <div class="modals">
+        <!-- LOGIN MODAL-->
+        <div class="modal" id="login">
+          <button type="button" class="modal__close"></button>
+          <h2 class="modal__title">Авторизация</h2>
+          <form action="https://mirasov.dev/" method="POST" class="form" novalidate>
+            <label class="label">
+              <p class="label__text">Email</p>
+              <input type="email" name="email" class="input" required />
+            </label>
+            <label class="label">
+              <p class="label__text">Пароль</p>
+              <input type="password" name="password" class="input" required />
+            </label>
+            <button type="submit" class="button button--submit">Войти</button>
+            <ul class="modal__links">
+              <li><a href="#" data-modal="forgot-password">Забыли пароль?</a></li>
+              <li><a href="#" data-modal="registration">Регистрация</a></li>
+            </ul>
+          </form>
+        </div>
+
+        <!-- REGISTRATION -->
+        <div class="modal" id="registration">
+          <button type="button" class="modal__close"></button>
+          <h2 class="modal__title">Регистрация</h2>
+          <form action="#" method="POST" class="form" novalidate>
+            <label class="label">
+              <p class="label__text">Фамилия*</p>
+              <input type="text" name="sername" class="input" required />
+            </label>
+            <label class="label">
+              <p class="label__text">Имя*</p>
+              <input type="text" name="name" class="input" required />
+            </label>
+            <label class="label">
+              <p class="label__text">Отчество</p>
+              <input type="text" name="patronymic" class="input" />
+            </label>
+            <label class="label">
+              <p class="label__text">E-mail*</p>
+              <input type="email" name="email" class="input" required />
+            </label>
+            <label class="label">
+              <p class="label__text">Телефон*</p>
+              <input type="tel" name="phone" class="input" required />
+            </label>
+
+            <fieldset class="fieldset">
+              <label class="label">
+                <input type="checkbox" name="policy" class="checkbox" data-agree />
+                <p class="label__text">
+                  <span>
+                    Я ознакомился с <a href="#" target="_blank">Правилами акции</a>, <a href="#" target="_blank">Пользовательским соглашением</a> и
+                    даю своё согласие на обработку персональных данных
+                  </span>
+                </p>
+              </label>
+
+              <label class="label">
+                <input type="checkbox" name="subscribe" class="checkbox" />
+                <p class="label__text">
+                  Я даю согласие на получение рекламной рассылки (в т.ч. в виде смс, электронных писем и/или через мессенджеры)
+                </p>
+              </label>
+            </fieldset>
+
+            <footer>
+              <button type="submit" class="button button--submit" disabled>Зарегистрироваться</button>
+              <ul class="modal__links">
+                <li><a href="#" data-modal="login">Авторизация</a></li>
+              </ul>
+            </footer>
+          </form>
+        </div>
+
+        <!--СHEQUE MODAL-->
+        <div class="modal" id="сheque">
+          <button type="button" class="modal__close"></button>
+          <h2 class="modal__title">Загрузка чека</h2>
+          <ul class="modal__list">
+            <li>
+              <img src="./assets/img/svg/list1.svg" alt="Алёнка" />
+              <p>Нажмите «Загрузить»</p>
+            </li>
+            <li>
+              <img src="./assets/img/svg/list2.svg" alt="Алёнка" />
+              <p>Выберите фото чека</p>
+            </li>
+            <li>
+              <img src="./assets/img/svg/list3.svg" alt="Алёнка" />
+              <p>Фото чека должно быть:</p>
+              <ul>
+                <li>чётким</li>
+                <li>с полным списком продуктов</li>
+                <li>на фото должен быть QR код</li>
+              </ul>
+            </li>
+            <li>
+              <img src="./assets/img/svg/list4.svg" alt="Алёнка" />
+              <p>Если фото окажется плохого качества, чек принят не будет</p>
+            </li>
+          </ul>
+          <div class="modal__check-download">
+            <img src="./assets/img/check.png" alt="Пример чека" />
+            <p>Пример чека</p>
+          </div>
+          <div>
+            <button type="button" class="button button--submit" data-modal="сheque-photo">Загрузить</button>
+            <ul class="modal__links">
+              <li><a href="#" data-modal="сheque-data">Ввести данные чека вручную</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- СHEQUE DATA MODAL-->
+        <div class="modal" id="сheque-data">
+          <button type="button" class="modal__close"></button>
+          <h2 class="modal__title">Ввод данных чека</h2>
+          <p class="modal__subtitle">Внимательно введите <br />данные чека в поля ниже</p>
+          <form action="#" method="POST" class="form" novalidate>
+            <label class="label">
+              <p class="label__text">ФН</p>
+              <input type="text" name="fn" class="input" />
+            </label>
+            <label class="label">
+              <p class="label__text">ФД</p>
+              <input type="text" name="fd" class="input" />
+            </label>
+            <label class="label">
+              <p class="label__text">ФП</p>
+              <input type="text" name="fp" class="input" />
+            </label>
+            <label class="label">
+              <p class="label__text">Дата покупки</p>
+              <input type="date" name="date" class="input" required />
+            </label>
+            <label class="label">
+              <p class="label__text">Время покупки</p>
+              <input type="time" name="time" class="input" required />
+            </label>
+            <label class="label">
+              <p class="label__text">Сумма покупки</p>
+              <input type="number" name="sum" class="input" required />
+            </label>
+            <button type="submit" class="button button--submit">Отправить чек</button>
+            <ul class="modal__links">
+              <li><a href="#" data-modal="сheque-photo">Попробовать снова загрузить фото</a></li>
+            </ul>
+          </form>
+        </div>
+
+        <!-- СHEQUE PHOTO DOWNLOAD MODAL-->
+        <div class="modal" id="сheque-photo">
+          <button type="button" class="modal__close"></button>
+          <h2 class="modal__title">Загрузка чека</h2>
+          <form action="#" method="POST" class="form" enctype="multipart/form-data" novalidate>
+            <div class="download-file">
+              <label class="label-for-file">
+                <input type="file" name="сheque" class="input input-file" required />
+                <img src="./assets/img/svg/plus.svg" alt="Алёнка" />
+                <p class="label__text" data-text="Перетащите фото чека или нажмите для выбора">Перетащите фото чека или нажмите для выбора</p>
+              </label>
+            </div>
+            <button type="submit" class="button button--submit">Загрузить</button>
+            <ul class="modal__links">
+              <li><a href="#" data-modal="сheque-data">Ввести данные чека вручную</a></li>
+            </ul>
+          </form>
+        </div>
+
+        <!-- PASSWORD FORGOT-->
+        <div class="modal" id="forgot-password">
+          <button type="button" class="modal__close"></button>
+          <h2 class="modal__title">Восстановите пароль</h2>
+          <form action="#" method="POST" class="form" novalidate>
+            <label class="label">
+              <p class="label__text">Email указанный при регистрации</p>
+              <input type="email" name="email" class="input" required />
+            </label>
+            <button type="submit" class="button button--submit">Восстановить</button>
+            <ul class="modal__links">
+              <li><a href="#" data-modal="login">Авторизация</a></li>
+            </ul>
+          </form>
+        </div>
+
+        <!-- CALLBACK MODAL-->
+        <div class="modal" id="callback">
+          <button type="button" class="modal__close"></button>
+          <h2 class="modal__title">Обратная связь</h2>
+          <form action="#" method="POST" class="form" novalidate>
+            <label class="label">
+              <p class="label__text">Имя*</p>
+              <input type="text" name="name" class="input" required />
+            </label>
+            <label class="label">
+              <p class="label__text">E-mail*</p>
+              <input type="email" name="email" class="input" required />
+            </label>
+            <label class="label">
+              <p class="label__text">Тема сообщения</p>
+              <select name="subject" class="input" required>
+                <option value="">--Выберите тему--</option>
+                <option value="subject1">Тема 1</option>
+                <option value="subject2">Тема 2</option>
+                <option value="subject3">Тема 3</option>
+                <option value="subject4">Тема 4</option>
+                <option value="subject5">Тема 5</option>
+                <option value="subject6">Тема 6</option>
+              </select>
+            </label>
+            <label class="label">
+              <p class="label__text">Текст сообщения</p>
+              <textarea name="message" class="input input--textarea" required></textarea>
+            </label>
+            <fieldset class="fieldset">
+              <label class="label">
+                <input type="checkbox" name="policy" class="checkbox" data-agree checked />
+                <p class="label__text">
+                  <span>Я согласен на обработку персональных данных</span>
+                </p>
+              </label>
+            </fieldset>
+            <button type="submit" class="button button--submit">Зарегистрироваться</button>
+          </form>
+        </div>
+
+        <!-- PASSWORD CONFIRM-->
+        <div class="modal" id="confirm-password">
+          <button type="button" class="modal__close"></button>
+          <h2 class="modal__title">Восстановите пароль</h2>
+          <p class="modal__subtitle">Отправили письмо с инструкцией по восстановлению пароля</p>
+          <button type="button" class="button button--submit" onclick="closeModal()">Продолжить</button>
+        </div>
+
+        <!-- CHECK DOWNLOAD CONFIRM--->
+        <div class="modal" id="confirm-сheque-download">
+          <button type="button" class="modal__close"></button>
+          <h2 class="modal__title">Чек загружен</h2>
+          <p class="modal__subtitle">
+            Ваш чек загружен успешно. <br />
+            Следите за его статусом в своём <br />
+            личном кабинете.
+          </p>
+          <button type="button" class="button button--submit" onclick="closeModal()">Закрыть</button>
+        </div>
+      </div>
+    </div>
+
+    <!--HISTORY-->
+    <div class="history" data-js="history">
+      <div class="space-bg">
+        <div class="stars-sky"></div>
+        <div class="stars-sky"></div>
+        <img src="./assets/img/hero/meteor.png" alt="Падающая звезда" class="meteor" />
+        <img src="./assets/img/hero/meteor.png" alt="Падающая звезда" class="meteor" />
+        <img src="./assets/img/gif/spaceBg.webp" alt="Падающая звезда" class="history-bg" />
+      </div>
+      <button type="button" class="button button--white" onclick="hideHistory();">Пропустить&nbsp;&nbsp;&nbsp;&#x3E;</button>
+      <button type="button" class="scroll-down" data-js="next-scene">
+        <img src="./assets/img/gif/arrow.gif" alt="Логотип Алёнка" />
+      </button>
+
+      <!--scens-->
+      <div class="history-scens scene--1">
+        <!--галактика магнит-->
+        <div class="history-scens__item magnit-galaxy"></div>
+
+        <!--карамельная планета-->
+        <div class="history-scens__item karamel-planet">
+          <div class="planet cube">
+            <img src="./assets/img/hero/planet_big.png" alt="Алёнка" />
+          </div>
+        </div>
+
+        <!--метеоритный дождь-->
+        <div class="history-scens__item meteorits"></div>
+
+        <!--ракета-->
+        <div class="history-scens__item history-rocket">
+          <div class="history-rocket-image">
+            <div class="rocket">
+              <img src="./assets/img/hero/raketa2.png" alt="Ракета" class="animated" />
+              <img src="./assets/img/hero/raketa.png" alt="Ракета" />
+            </div>
+          </div>
+        </div>
+
+        <!--текст-->
+        <div class="history-scens__item history-text">
+          <ul class="history-text__list">
+            <li class="history-text__item history-text__item--1">
+              <p>
+                <span>Время отправляться в космос, <br />чтобы найти новый вкус!</span>
+              </p>
+            </li>
+            <li class="history-text__item history-text__item--2">
+              <p>Метеоритный дождь! <br />Мы не сможем пройти!</p>
+            </li>
+            <li class="history-text__item history-text__item--3">
+              <p>Притяжение из галактики <span>«Магнит»</span>! <br />Мы на верном пути!</p>
+            </li>
+            <li class="history-text__item history-text__item--4">
+              <p>
+                Алёнка нашла вселенную <span>«Карамельный <br />взрыв!»</span> мммм.... <span>невероятно вкусно!</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <!--дом снаружи-->
+        <div class="history-scens__item home-outside"></div>
+
+        <!--дом внутри-->
+        <div class="history-scens__item home-inside"></div>
+
+        <!--магнит лого 1-->
+        <div class="history-scens__item magnit-logo">
+          <img src="./assets/img/history/magnit.svg" alt="magnit" />
+        </div>
+
+        <!--магнит лого 2-->
+        <div class="history-scens__item magnit-logo2">
+          <img src="./assets/img/svg/magnet.svg" alt="magnit" />
+        </div>
+
+        <!--Последний слайд-->
+        <div class="history-scens__item final-slide">
+          <div class="final-slide-container">
+            <div class="final-slide__text">
+              <h2>
+                Присоединяйся! <br />
+                Покупай Алёнку <br />
+                <span>«Карамельный взрыв»</span> <br />
+                регистрируй чеки, проходи <br />
+                тест и узнай кто ты из <br />
+                карамельной вселенной!
+              </h2>
+            </div>
+            <div class="final-slide__image">
+              <div class="cube">
+                <div class="heroImageScene">
+                  <img src="./assets/img/hero/alenka.png" alt="Алёнка" class="animated" />
+                  <img src="./assets/img/hero/alenka_bg.png" alt="Алёнка" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--интро текст-->
+        <div class="history-scens__item intro-text">
+          <h2>
+            Однажды вечером, <br />
+            Алёнка мечтала <br />
+            о космосе и новых <br />
+            открытиях!
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/history.js" type="module" defer></script>
+    <script src="./assets/js/test.js" type="module" defer></script>
+    <script src="./assets/js/menu.js" type="module" defer></script>
+    <script src="./assets/js/forms.js" type="module" defer></script>
+    <script src="./assets/js/form-validation.js" type="module" defer></script>
+    <script src="./assets/js/modal.js" type="module" defer></script>
+    <script src="./assets/js/scripts.js" type="module" defer></script>
+  </body>
+</html>
