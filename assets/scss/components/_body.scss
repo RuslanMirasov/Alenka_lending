@@ -1,0 +1,47 @@
+.body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  color: var(--brown);
+  background-attachment: fixed;
+  @media screen and (max-width: 1023px) {
+    background-attachment: scroll;
+  }
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: var(--paragmatica);
+  font-weight: normal;
+  &.freez {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  &.body--history {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    header,
+    footer,
+    section {
+      opacity: 0;
+      pointer-events: none;
+      user-select: none;
+    }
+  }
+}
+
+.main {
+  flex: 1;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+header,
+footer,
+section {
+  transition: opacity 1s;
+}

@@ -1,0 +1,246 @@
+.section--test {
+  overflow: hidden;
+  color: var(--white);
+  z-index: 0;
+  .section-container {
+    justify-content: center;
+  }
+}
+
+.test {
+  width: 100%;
+  margin-top: 100px;
+  @media screen and (max-width: 767px) {
+    margin-top: 250px;
+  }
+  .title--h2 {
+    max-width: 634px;
+    text-align: center;
+    padding-top: 50px;
+    margin: 0 auto;
+    strong {
+      color: var(--biege);
+    }
+  }
+}
+
+.step-counter {
+  display: inline-block;
+  color: var(--red);
+  font-family: var(--serif);
+  font-style: oblique;
+  font-size: 32px;
+  transition: 0.3s;
+  opacity: 1;
+  &.hidden {
+    opacity: 0;
+  }
+  @media screen and (max-width: 767px) {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+}
+
+.steps {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px auto;
+  height: auto;
+  // min-height: 560px;
+  @media screen and (max-width: 1023px) {
+    min-height: auto;
+  }
+}
+
+.step {
+  display: none;
+  width: 100%;
+  position: relative;
+  padding: 0px 50px;
+  color: var(--biege);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  @media screen and (max-width: 767px) {
+    padding: 0px;
+  }
+  > .step {
+    padding: 0px;
+  }
+  &.active {
+    display: inline-block;
+    @media screen and (max-width: 1023px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+  .white {
+    color: var(--white);
+  }
+}
+
+.step__text {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 24px;
+  width: 55%;
+  max-width: 488px;
+  float: left;
+  @media screen and (max-width: 1023px) {
+    width: 100%;
+    max-width: 100%;
+    float: none;
+  }
+  &.full {
+    width: 100%;
+    max-width: 650px;
+  }
+  &.final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    max-width: 100%;
+    .rocket {
+      position: relative;
+      width: 230px;
+      height: 230px;
+    }
+    b {
+      display: block;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .button {
+      min-width: 400px;
+      margin-top: 10px;
+      @media screen and (max-width: 767px) {
+        min-width: 100%;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 48px;
+    line-height: 1;
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+  }
+  h3 {
+    font-size: 46px;
+    line-height: 1;
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+  }
+  b {
+    font-size: 32px;
+    line-height: 1;
+    font-family: var(--serif);
+    font-style: oblique;
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+    }
+  }
+  p {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-top: 36px;
+    @media screen and (max-width: 767px) {
+      font-size: 14px;
+    }
+  }
+  span,
+  p {
+    color: var(--white);
+  }
+}
+
+.step__actions {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 30px;
+  width: 44%;
+  max-width: 400px;
+  float: right;
+  @media screen and (max-width: 1023px) {
+    width: 100%;
+    float: none;
+  }
+  .form {
+    max-width: 100%;
+    width: 100%;
+    .file-reset {
+      right: 20px;
+      top: 20px;
+    }
+    .download-file {
+      width: 100%;
+      height: 400px;
+      @media screen and (max-width: 767px) {
+        height: 280px;
+      }
+    }
+    .label-for-file {
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      border: 2px dashed var(--biege);
+      border-radius: 46px;
+      background-color: rgba(0, 0, 0, 0);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+      @media screen and (max-width: 767px) {
+        border-radius: 30px;
+      }
+      &.invalid {
+        border: 2px dashed var(--invalid);
+      }
+      &.loaded {
+        border: none;
+      }
+      .label__text {
+        margin: 0;
+        font-size: 24px;
+        color: #808080;
+      }
+      img {
+        position: absolute;
+        width: 100px;
+        height: 90px;
+      }
+    }
+  }
+}

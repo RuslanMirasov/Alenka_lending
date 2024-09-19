@@ -1,0 +1,117 @@
+.planet {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  user-select: none;
+  pointer-events: none;
+  z-index: 1;
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+  }
+
+  &.planet--small {
+    width: 200px;
+    left: 0px;
+    top: 0px;
+    transform: translate(-40%, 40px);
+    img {
+      animation: moveUpDown 3s ease-in-out infinite;
+    }
+  }
+
+  &.planet--big {
+    width: 724px;
+    left: 0px;
+    bottom: 0px;
+    transform: translate(-35%, 0px);
+    z-index: 0;
+    @media screen and (max-width: 1279px) {
+      width: 500px;
+      transform: translate(-35%, -20%);
+    }
+    @media screen and (max-width: 767px) {
+      width: 346px;
+      transform: translate(-40%, -60px);
+    }
+    img {
+      animation: moveUpDown 6s ease-in-out infinite;
+    }
+  }
+
+  &.planet--medium {
+    width: 275px;
+    left: 0px;
+    bottom: 0px;
+    transform: translate(-25%, -200px);
+    @media screen and (max-width: 1439px) {
+      transform: translate(-40%, -200px);
+    }
+    @media screen and (max-width: 1365px) {
+      transform: translate(-50%, -200px);
+    }
+    @media screen and (max-width: 1279px) {
+      width: 98px;
+    }
+    @media screen and (max-width: 767px) {
+      bottom: auto;
+      top: 140px;
+      transform: translate(-25%, 0px);
+    }
+    img {
+      animation: moveUpDown 4s ease-in-out infinite;
+    }
+  }
+
+  &.planet--saturn {
+    position: absolute;
+    width: 570px;
+    right: 0px;
+    top: 0px;
+    transform: translate(25%, 0px);
+    z-index: 500;
+    @media screen and (max-width: 1439px) {
+      width: 470px;
+    }
+    @media screen and (max-width: 1365px) {
+      width: 400px;
+    }
+    @media screen and (max-width: 1279px) {
+      width: 296px;
+    }
+    @media screen and (max-width: 767px) {
+      width: 296px;
+      transform: translate(40%, 10px);
+    }
+    img {
+      animation: moveUpDown 6s ease-in-out infinite;
+    }
+  }
+}
+
+.section--saturn {
+  width: 100%;
+  height: 570px;
+  background: rgba(0, 0, 0, 0);
+  z-index: 3;
+  margin-top: -100px;
+  margin-bottom: -470px;
+  pointer-events: none;
+  overflow: hidden;
+  @media screen and (max-width: 1439px) {
+    height: 470px;
+    margin-top: -70px;
+    margin-bottom: -400px;
+  }
+  @media screen and (max-width: 767px) {
+    height: 340px;
+    margin-top: 0px;
+    margin-bottom: -340px;
+  }
+}

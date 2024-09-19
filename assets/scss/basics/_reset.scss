@@ -1,0 +1,75 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: var(--paragmatica);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header,
+footer {
+  width: 100%;
+}
+
+img,
+picture {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  outline: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.cube {
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+  }
+}
+
+input {
+  outline: none;
+}
+
+ul,
+menu,
+ol {
+  list-style: none;
+}
+
+input[type='date'],
+input[type='time'] {
+  width: 100%;
+  min-width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+}

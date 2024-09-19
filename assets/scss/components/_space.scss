@@ -1,0 +1,122 @@
+.space-bg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  background: #000000 url('../img/svg/space.svg') repeat left top;
+
+  img {
+    opacity: 1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    &.history-bg {
+      opacity: 0.5;
+    }
+    &.bg-lines {
+      // position: relative;
+      object-fit: fill;
+      @media screen and (max-width: 1023px) {
+        object-fit: cover;
+      }
+    }
+    &.meteor {
+      z-index: 1;
+      width: auto;
+      height: auto;
+      left: 0%;
+      top: 0%;
+      animation: fallingStar 10s linear infinite 0s;
+      + .meteor {
+        left: 50%;
+        animation: fallingStar 10s linear infinite 0.5s;
+      }
+    }
+    &.bg-head {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      @media screen and (max-width: 1023px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.space-bg:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: #27007a;
+  z-index: 2;
+  opacity: 0.4;
+}
+
+.space-bg .stars-sky:first-child {
+  transform: rotate(30deg) scale(1);
+}
+
+.space-bg .stars-sky:first-child:before {
+  animation: fadeOut 2s ease-in-out infinite 0.75s;
+}
+
+.space-bg .stars-sky:first-child:after {
+  animation: fadeOut 3s ease-in-out infinite 1.2s;
+}
+
+.stars-sky {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url('../img/svg/space.svg') repeat left top;
+  background-size: 200px 200px;
+}
+
+.stars-sky:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: url('../img/svg/space.svg') repeat left top;
+  animation: fadeOut 2s ease-in-out infinite;
+  transform: rotate(45deg) scale(1.3);
+}
+
+.stars-sky:after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: url('../img/svg/space.svg') repeat left top;
+  animation: fadeOut 3s ease-in-out infinite;
+  transform: rotate(-35deg) scale(1);
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

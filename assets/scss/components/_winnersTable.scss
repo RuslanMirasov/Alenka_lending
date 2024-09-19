@@ -1,0 +1,140 @@
+.winnersTable {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
+  margin-top: 30px;
+  text-align: left;
+
+  font-size: 22px;
+  thead {
+    tr {
+      padding: 15px 20px;
+      @media screen and (min-width: 1024px) {
+        display: flex;
+        justify-content: space-between;
+      }
+      @media screen and (max-width: 1023px) {
+        padding: 6px 0px;
+      }
+      th {
+        font-size: 32px;
+        color: var(--red);
+        font-family: var(--serif);
+        font-style: oblique;
+        @media screen and (max-width: 1023px) {
+          font-size: 26px;
+        }
+        @media screen and (max-width: 767px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  tbody {
+    tr {
+      color: var(--brown);
+      transition: 0.3s;
+      padding: 15px 20px;
+      border-radius: 30px;
+      vertical-align: top;
+      @media screen and (min-width: 1024px) {
+        display: flex;
+        justify-content: space-between;
+      }
+      @media screen and (max-width: 1023px) {
+        padding: 6px 0px;
+        display: auto;
+      }
+      &:hover {
+        background: var(--white);
+        @media screen and (max-width: 767px) {
+          background: inherit;
+        }
+      }
+    }
+  }
+  td,
+  th {
+    @media screen and (min-width: 1024px) {
+      &.waiting,
+      &.confirm,
+      &.rejected {
+        position: relative;
+        padding-left: 30px;
+        &:before {
+          content: '';
+          width: 24px;
+          height: 24px;
+          background: red;
+          position: absolute;
+          left: 0px;
+          top: 2px;
+        }
+      }
+      &.waiting {
+        &:before {
+          background: url('../img/svg/waiting.svg') no-repeat center center;
+        }
+      }
+      &.confirm {
+        &:before {
+          background: url('../img/svg/prize.svg') no-repeat center center;
+        }
+      }
+      &.rejected {
+        &:before {
+          background: url('../img/svg/reject.svg') no-repeat center center;
+        }
+      }
+    }
+
+    &:nth-child(1) {
+      min-width: 150px;
+    }
+    &:nth-child(2) {
+      min-width: 120px;
+    }
+    &:nth-child(3) {
+      min-width: 160px;
+    }
+    &:nth-child(4) {
+      min-width: 316px;
+    }
+    @media screen and (max-width: 1023px) {
+      font-size: 18px;
+      padding: 5px;
+      &:nth-child(1) {
+        min-width: 90px;
+        padding-left: 0px;
+      }
+      &:nth-child(2) {
+        min-width: 120px;
+      }
+      &:nth-child(3) {
+        min-width: 120px;
+      }
+      &:nth-child(4) {
+        min-width: 220px;
+        padding-right: 0px;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 11px;
+      &:nth-child(1) {
+        min-width: auto;
+        white-space: nowrap;
+      }
+      &:nth-child(2) {
+        min-width: auto;
+        white-space: nowrap;
+      }
+      &:nth-child(3) {
+        min-width: auto;
+        white-space: nowrap;
+      }
+      &:nth-child(4) {
+        min-width: auto;
+      }
+    }
+  }
+}

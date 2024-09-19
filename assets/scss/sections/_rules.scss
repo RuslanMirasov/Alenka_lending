@@ -1,0 +1,140 @@
+.section--rules {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  z-index: 2;
+}
+
+.rules {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  position: relative;
+  gap: 50px;
+  padding: 24px 30px;
+  border-radius: 46px;
+  background: radial-gradient(70% 240.71% at 49.62% 52.1%, rgba(255, 255, 255, 0.9) 0%, rgba(244, 219, 108, 0.9) 100%);
+  color: var(--brown);
+  text-align: center;
+  counter-reset: item;
+  z-index: 1;
+  li {
+    position: relative;
+    width: calc((100% - 4 * 50px) / 5);
+    &:before {
+      content: counter(item, decimal-leading-zero);
+      counter-increment: item;
+      font-family: var(--serif);
+      font-style: oblique;
+      font-size: 128px;
+      line-height: 1;
+      opacity: 0.1;
+    }
+    .button {
+      position: absolute;
+      width: 204px;
+      left: 50%;
+      transform: translate(-50%, 0%);
+    }
+    .title {
+      position: relative;
+      width: calc(100% + 50px);
+      transform: translate(-25px, 0%);
+      color: var(--red);
+      margin-bottom: 4px;
+      margin-top: -45px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .rules {
+    gap: 20px;
+    li {
+      width: calc((100% - 4 * 20px) / 5);
+      &:before {
+        font-size: 100px;
+      }
+      .title {
+        width: calc(100% + 20px);
+        transform: translate(-10px, 0%);
+        margin-top: -40px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .rules {
+    gap: 10px;
+    li {
+      width: calc((100% - 4 * 10px) / 5);
+      &:before {
+        font-size: 100px;
+      }
+      .title {
+        width: calc(100% + 10px);
+        transform: translate(-5px, 0%);
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .rules {
+    gap: 10px;
+    padding-bottom: 40px;
+    li {
+      position: static;
+      width: calc((100% - 1 * 10px) / 2);
+      &:before {
+        font-size: 100px;
+      }
+      .title {
+        width: 100%;
+        transform: translate(0px, 0%);
+      }
+      p {
+        font-size: 18px;
+      }
+      .button {
+        bottom: -25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .rules {
+    gap: 24px;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 320px;
+    border-radius: 32px;
+    li {
+      width: 100%;
+      &:before {
+        font-size: 128px;
+      }
+      p br {
+        display: none;
+      }
+      .button {
+        bottom: -25px;
+      }
+    }
+  }
+}

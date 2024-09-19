@@ -1,0 +1,37 @@
+.footer {
+  display: block;
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  background-size: 100% auto;
+  color: var(--white);
+  padding: 100px 0px 30px 0px;
+  .section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 12px;
+    a {
+      border-bottom: 1px solid var(--white);
+      &:hover {
+        color: var(--biege);
+        border-bottom: 1px solid var(--biege);
+      }
+    }
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      p {
+        max-width: 245px;
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    padding: 60px 0px 30px 0px;
+  }
+}

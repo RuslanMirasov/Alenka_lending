@@ -1,0 +1,492 @@
+.history {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s;
+  color: var(--white);
+  &.active {
+    pointer-events: all;
+    opacity: 1;
+    visibility: visible;
+  }
+  .button--white {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    z-index: 10;
+    @media screen and (max-width: 1439px) {
+      left: 30px;
+      top: 30px;
+    }
+    @media screen and (max-width: 1023px) {
+      left: 20px;
+      top: 20px;
+      font-size: 16px;
+    }
+  }
+  .scroll-down {
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    z-index: 10;
+    width: 70px;
+    height: 70px;
+    @media screen and (max-width: 1439px) {
+      width: 50px;
+      height: 50px;
+      right: 50px;
+      bottom: 50px;
+    }
+    @media screen and (max-width: 1023px) {
+      width: 42px;
+      height: 42px;
+      right: 20px;
+      bottom: 75px;
+    }
+  }
+}
+
+.history-scens,
+.history-scens__item {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  pointer-events: all; // pointer-events
+}
+
+.history-rocket-image {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  @media screen and (max-width: 1023px) {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.history-scens__item {
+  z-index: 3;
+  transition: 1s cubic-bezier(0.62, 0.18, 0.6, 0.91);
+}
+
+.history-rocket {
+  transition: 1s cubic-bezier(0.62, 0.18, 0.6, 0.91) 0s;
+  transform: scale(1) translate(-40%, 80%);
+  opacity: 0;
+}
+
+.history-text__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  bottom: 60px;
+  font-size: 48px;
+  line-height: 1.25;
+  font-family: var(--serif);
+  font-style: oblique;
+  color: var(--biege);
+  margin-top: auto;
+  @media screen and (max-width: 1439px) {
+    bottom: 40px;
+    font-size: 40px;
+  }
+  @media screen and (max-width: 1023px) {
+    padding: 0px 20px;
+    font-size: 28px;
+    bottom: 110px;
+    br {
+      display: none;
+    }
+  }
+  span {
+    color: var(--white);
+  }
+  li {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    &:nth-child(4) {
+      position: relative;
+    }
+
+    p {
+      display: inline-block;
+    }
+    @media screen and (max-width: 1023px) {
+      padding: 0px 10px;
+    }
+    &:before {
+      content: '“';
+      font-size: 300px;
+      line-height: 0.5;
+      position: absolute;
+      right: 100%;
+      margin-right: -64px;
+      opacity: 0.2;
+      top: 0px;
+      font-family: var(--paragmatica);
+      @media screen and (max-width: 1439px) {
+        font-size: 200px;
+        margin-right: -50px;
+      }
+      @media screen and (max-width: 1023px) {
+        margin-right: 0px;
+        right: auto;
+        left: -10px;
+      }
+    }
+  }
+}
+
+.history-text {
+  transform: translate(0%, 0%);
+  opacity: 1;
+  .history-text__item {
+    transition: 0.3s ease-in-out 0.35s;
+    opacity: 0;
+  }
+}
+
+.meteorits {
+  background: url('../img/history/meteorites.png') no-repeat right top;
+  background-size: auto 100%;
+  transform: scale(1) translate(40%, -40%);
+  opacity: 0;
+  @media screen and (max-width: 1023px) {
+    background: url('../img/history/meteorites_mobil.png') no-repeat right top;
+    background-size: 100% auto;
+    transform: scale(1) translate(50%, -20%);
+  }
+}
+
+.magnit-galaxy {
+  background: url('../img/history/magneto.png') no-repeat right top;
+  background-size: auto 80%;
+  transform: scale(1) translate(40%, -40%);
+  opacity: 0;
+  @media screen and (max-width: 1023px) {
+    background: url('../img/history/magneto_mobil.png') no-repeat center top;
+    background-size: 140% auto;
+  }
+}
+
+.magnit-logo {
+  transform: translate(0%, -30%);
+  img {
+    position: absolute;
+    top: 60px;
+    @media screen and (max-width: 1439px) {
+      top: 50px;
+      width: 120px;
+    }
+    @media screen and (max-width: 1023px) {
+      top: 20px;
+      right: 20px;
+      width: 120px;
+    }
+  }
+}
+
+.magnit-logo2 {
+  transform: translate(0%, -30%);
+  img {
+    position: absolute;
+    width: 192px;
+    top: 60px;
+    @media screen and (max-width: 1439px) {
+      top: 50px;
+      width: 120px;
+    }
+    @media screen and (max-width: 1023px) {
+      top: 20px;
+      right: 20px;
+      width: 140px;
+    }
+  }
+}
+
+.karamel-planet {
+  transform: translate(10%, -30%);
+  opacity: 0;
+  @media screen and (max-width: 1023px) {
+    transform: translate(40%, 0%);
+  }
+  .planet {
+    transition: 1s cubic-bezier(0.62, 0.18, 0.6, 0.91);
+    transform: scale(0);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 130vh;
+    @media screen and (max-width: 1023px) {
+      width: 80vh;
+    }
+    img {
+      animation: moveUpDown 5s ease-in-out infinite;
+    }
+  }
+}
+
+.final-slide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  transform: translate(0%, 20%);
+  opacity: 0;
+  transition: 0.8s cubic-bezier(0.62, 0.18, 0.6, 0.91);
+  .final-slide-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    max-width: 1200px;
+    @media screen and (max-width: 1439px) {
+      max-width: 1024px;
+    }
+    @media screen and (max-width: 1279px) {
+      max-width: calc(100% - 100px);
+      br {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 1023px) {
+      max-width: calc(100% - 40px);
+    }
+  }
+  .final-slide__text {
+    width: 50%;
+    @media screen and (max-width: 1023px) {
+      width: 100%;
+      order: 2;
+    }
+    h2 {
+      font-size: 48px;
+      line-height: 1.2;
+      color: var(--biege);
+      @media screen and (max-width: 1439px) {
+        font-size: 40px;
+      }
+      @media screen and (max-width: 1023px) {
+        font-size: 28px;
+        text-align: center;
+      }
+      span {
+        color: var(--white);
+      }
+    }
+  }
+  .final-slide__image {
+    position: relative;
+    width: 50%;
+    @media screen and (max-width: 1023px) {
+      width: 90%;
+    }
+  }
+}
+
+.intro-text {
+  transform: translate(0%, -50%);
+  @media screen and (max-width: 1023px) {
+    transform: translate(0%, -100%);
+  }
+  h2 {
+    position: absolute;
+    top: 8%;
+    font-family: var(--serif);
+    font-style: oblique;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;
+    @media screen and (max-width: 1439px) {
+      font-size: 38px;
+    }
+    @media screen and (max-width: 1023px) {
+      font-size: 28px;
+    }
+  }
+}
+
+.home-inside {
+  background: url('../img/history/home_inside.png') no-repeat center center/cover;
+  transform: scale(2) translate(0%, 20%);
+  opacity: 0;
+  @media screen and (max-width: 1023px) {
+    background: url('../img/history/home_inside_mobil.png') no-repeat center center/cover;
+    transform: scale(5) translate(0%, 5%);
+  }
+}
+
+.home-outside {
+  height: 200%;
+  background: url('../img/history/home.png') no-repeat center bottom/cover;
+  transform: scale(1.7) translate(0%, 50%);
+  opacity: 1;
+  @media screen and (max-width: 1023px) {
+    height: 125%;
+    transform: scale(1) translate(0%, 110%);
+    background: url('../img/history/home_mobil.png') no-repeat center bottom/cover;
+  }
+}
+
+//----------------------------------------------------------------------------------------
+
+.scene--7 {
+  .final-slide {
+    transition: 0.5s ease-out 0.5s;
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+  .history-text {
+    transform: translate(0%, 30%);
+    opacity: 0;
+  }
+  .history-text__item--4 {
+    opacity: 1;
+  }
+  .magnit-logo2 {
+    transform: scale(1) translate(0%, 0%);
+  }
+}
+
+.scene--6 {
+  .history-text__item--4 {
+    opacity: 1;
+  }
+  .history-rocket {
+    transform: scale(0.3) translate(100%, -10%);
+    opacity: 0;
+  }
+  .magnit-galaxy {
+    transform: scale(3) translate(0%, 0%);
+    opacity: 0;
+  }
+  .karamel-planet {
+    opacity: 1;
+    .planet {
+      transform: scale(1);
+    }
+  }
+}
+
+.scene--5 {
+  .history-text__item--3 {
+    opacity: 1;
+  }
+  .meteorits {
+    transform: scale(1) translate(-100%, 100%);
+    opacity: 0;
+  }
+  .magnit-galaxy {
+    transform: scale(1) translate(0%, 0%);
+    opacity: 1;
+    @media screen and (max-width: 1023px) {
+      transform: scale(1) translate(0%, 5%);
+    }
+  }
+  .magnit-logo {
+    transform: scale(1) translate(0%, 0%);
+  }
+  .history-rocket {
+    transform: scale(0.3) translate(55%, 20%);
+    opacity: 1;
+    @media screen and (max-width: 1023px) {
+      transform: scale(0.2) translate(-200%, 30%);
+    }
+  }
+}
+
+.scene--4 {
+  .history-rocket {
+    transform: scale(0.5) translate(-40%, 60%);
+    opacity: 1;
+    @media screen and (max-width: 1023px) {
+      transform: scale(0.5) translate(-60%, 25%);
+    }
+  }
+  .history-text__item--2 {
+    opacity: 1;
+  }
+  .meteorits {
+    transform: scale(1) translate(5%, -10%);
+    opacity: 1;
+    @media screen and (max-width: 1023px) {
+      transform: scale(1) translate(0%, 0%);
+    }
+  }
+}
+
+.scene--3 {
+  .history-rocket {
+    transform: scale(1) translate(0%, 0%);
+    opacity: 1;
+  }
+  .history-text__item--1 {
+    opacity: 1;
+  }
+}
+
+.scene--2 {
+  .home-outside {
+    transform: scale(1) translate(0%, -35%);
+    opacity: 1;
+    @media screen and (max-width: 1023px) {
+      transform: scale(1) translate(0%, -10%);
+    }
+  }
+  .history-text {
+    transform: translate(0%, 30%);
+    opacity: 0;
+  }
+  .history-text__item--1 {
+    opacity: 1;
+  }
+}
+
+.scene--1 {
+  .intro-text {
+    transform: translate(0%, 0%);
+    @media screen and (max-width: 1023px) {
+      transform: translate(0%, 22%);
+    }
+  }
+  .home-outside {
+    transform: scale(0.54) translate(0%, -35%);
+    opacity: 0.5;
+    @media screen and (max-width: 1023px) {
+      transform: scale(0.5) translate(0%, -0%);
+    }
+  }
+  .home-inside {
+    transform: scale(1) translate(0%, 0%);
+    opacity: 1;
+  }
+  .history-text {
+    transform: translate(0%, 30%);
+    opacity: 0;
+  }
+}

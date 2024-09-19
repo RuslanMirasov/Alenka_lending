@@ -1,0 +1,59 @@
+.runText {
+  width: 100%;
+  display: block;
+  flex-wrap: nowrap;
+  position: relative;
+  font-size: 200px;
+  font-family: var(--serif);
+  font-style: oblique;
+  line-height: 1;
+  color: var(--biege);
+  opacity: 0.2;
+  @media screen and (max-width: 767px) {
+    font-size: 80px;
+  }
+}
+
+.runText__inner {
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
+
+[data-runtext='left'] {
+  .runText__inner:first-child {
+    animation: 50s linear infinite moveLeft;
+  }
+  .runText__inner:last-child {
+    animation: 50s linear infinite moveLeftCopy;
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  49.999999% {
+    transform: translate(-100%, 0%);
+  }
+  50% {
+    transform: translate(100%, 0%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes moveLeftCopy {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  50% {
+    transform: translate(-100%, 0%);
+  }
+  99.999999% {
+    transform: translate(-200%, 0%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}

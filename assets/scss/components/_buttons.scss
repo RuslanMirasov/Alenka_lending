@@ -1,0 +1,141 @@
+.buttonWrapper {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  gap: 16px;
+  &.ta--c {
+    justify-content: center;
+  }
+}
+
+.button > * {
+  pointer-events: none;
+}
+
+.button {
+  background: var(--red);
+  font-family: var(--paragmatica-bold);
+  height: 50px;
+  padding: 0px 36px;
+  font-size: 18px;
+  user-select: none;
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 12px;
+  color: var(--white);
+  border-radius: 50px;
+  line-height: 1;
+  transition: 0.3s;
+  z-index: 1;
+  &:hover {
+    background: var(--button-hover);
+  }
+
+  &.full {
+    width: 100%;
+  }
+
+  &.button--small {
+    height: 32px;
+    padding: 0px 20px;
+    font-size: 15px;
+    @media screen and (max-width: 767px) {
+      font-size: 13px;
+    }
+  }
+
+  &.button--big {
+    height: 62px;
+    font-size: 22px;
+    font-family: var(--serif);
+    font-style: oblique;
+    @media screen and (max-width: 767px) {
+      font-size: 18px;
+      img,
+      svg,
+      picture {
+        width: 20px;
+      }
+    }
+  }
+
+  &.button--biege {
+    background: var(--biege);
+    height: 62px;
+    font-size: 24px;
+    font-family: var(--paragmatica);
+    color: var(--black);
+    box-shadow: -4px 6px 0px 0px var(--red);
+    &.vk {
+      @media screen and (max-width: 767px) {
+        gap: 10px;
+      }
+      &:after {
+        content: '';
+        width: 26px;
+        height: 16px;
+        background: url('../img/svg/vk.svg') no-repeat center center/cover;
+        @media screen and (max-width: 767px) {
+          width: 17px;
+          height: 10px;
+        }
+      }
+    }
+  }
+
+  &.button--blue {
+    background: var(--blue-dark);
+    width: auto;
+    height: 40px;
+    font-size: 16px;
+    font-family: var(--paragmatica-bold);
+    color: var(--white);
+    margin: 18px 0px;
+
+    img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &.button--submit {
+    font-family: var(--paragmatica);
+    font-size: 16px;
+    height: 40px;
+  }
+
+  &.button--icon {
+    height: 32px;
+    width: 32px;
+    padding: 0px;
+    border-radius: 8px;
+    background: var(--blue-dark);
+    img {
+      width: 55%;
+      height: 55%;
+    }
+  }
+
+  &.button--white {
+    height: 34px;
+    padding: 0px 16px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    color: var(--brown);
+    font-family: var(--paragmatica);
+    &:hover {
+      background: rgba(255, 255, 255, 1);
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,268 @@
+.section--promo {
+  color: var(--white);
+  height: auto;
+  min-height: 100vh;
+  overflow: hidden;
+  .section-container {
+    padding: 0px 20px;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    min-height: 100vh;
+    width: 80%;
+    min-width: 1200px;
+    max-width: 80%;
+  }
+}
+
+.promo-logo {
+  position: absolute;
+  top: 15px;
+  width: 174px;
+  @media screen and (max-width: 767px) {
+    width: 30px;
+  }
+}
+
+.promo {
+  display: flex;
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: auto;
+  .magnet {
+    width: 200px;
+    margin-left: auto;
+    position: relative;
+    right: -80px;
+  }
+}
+
+.promo__text {
+  display: flex;
+  max-width: 580px;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 47%;
+}
+
+.promo__image {
+  position: relative;
+  display: grid;
+  place-items: center;
+  max-width: 646px;
+  width: 53%;
+  margin-top: 50px;
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+  }
+}
+
+.promo-title {
+  font-size: 64px;
+  line-height: 1;
+}
+
+.promo-subtitle {
+  font-size: 34px;
+  color: var(--biege);
+  line-height: 1.2;
+  margin-top: 20px;
+  max-width: 448px;
+  &.hidden {
+    display: none;
+  }
+}
+
+.date-counter {
+  display: inline-flex;
+  gap: 10px;
+  margin: 30px 0px;
+  li {
+    display: grid;
+    place-items: center;
+    width: 120px;
+    height: 82px;
+    border-radius: 16px;
+    z-index: 1;
+    padding: 12px;
+    span {
+      font-size: 14px;
+      line-height: 1;
+      color: var(--blue-dark);
+    }
+    p {
+      font-family: var(--serif);
+      font-style: oblique;
+      font-size: 48px;
+      line-height: 1;
+      color: var(--red);
+    }
+
+    background: var(--white);
+  }
+}
+
+.promo-rocket {
+  display: block;
+  width: 200px;
+  position: absolute;
+  right: 3.2%;
+  top: 2.5%;
+}
+
+@media screen and (max-width: 1440px) {
+  .promo-logo {
+    width: 140px;
+  }
+  .promo .magnet {
+    width: 160px;
+  }
+  .promo-title {
+    font-size: 60px;
+  }
+  .promo-subtitle {
+    font-size: 28px;
+    max-width: 378px;
+  }
+  .date-counter {
+    margin: 20px 0px;
+  }
+  .promo-rocket {
+    width: 130px;
+    right: 3.5%;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .promo {
+    justify-content: space-between;
+  }
+  .promo .magnet {
+    width: 130px;
+    right: 0px;
+  }
+  .promo-title {
+    font-size: 54px;
+  }
+  .promo-subtitle {
+    font-size: 22px;
+    max-width: 294px;
+  }
+  .section--promo .section-container {
+    width: 84%;
+    min-width: auto;
+    max-width: 84%;
+  }
+  .promo__image {
+    max-width: 550px;
+    margin-top: 30px;
+  }
+  .date-counter {
+    margin: 10px 0px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .promo-title {
+    font-size: 36px;
+  }
+  .date-counter li {
+    width: 90px;
+    height: 60px;
+    border-radius: 12px;
+    z-index: 1;
+    padding: 8px;
+  }
+  .date-counter li span {
+    font-size: 11px;
+  }
+  .date-counter li p {
+    font-size: 34px;
+  }
+  .promo-subtitle {
+    font-size: 20px;
+    max-width: 304px;
+  }
+  .promo-logo {
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .section--promo .section-container {
+    display: block;
+    padding: 40px 20px;
+    margin: 0 auto;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    min-width: 320px;
+    max-width: 100%;
+  }
+  .promo-title {
+    margin-top: 10px;
+  }
+  .promo-subtitle {
+    text-align: center;
+    margin: 0 auto;
+    display: none;
+    &.hidden {
+      display: block;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  }
+  .promo-logo {
+    position: relative;
+    left: 50%;
+    transform: translate(-100%, 0%);
+    top: 0px;
+    width: 130px;
+    margin-bottom: -56px;
+  }
+
+  .promo .magnet {
+    width: 98px;
+    left: 50%;
+    margin-left: 26px;
+    margin-top: 15px;
+  }
+
+  .promo {
+    max-width: 400px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  .promo__text {
+    max-width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .promo__image {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .section--promo .planet.planet--small {
+    display: none;
+  }
+  .promo-rocket {
+    width: 100px;
+    position: absolute;
+    right: auto;
+    left: 50%;
+    transform: translate(-50%, 230px);
+    margin-left: 130px;
+    z-index: 10;
+  }
+}

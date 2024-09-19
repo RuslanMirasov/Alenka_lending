@@ -1,0 +1,80 @@
+:root {
+  --color: #1fb946;
+  --biege: #f4db6c;
+  --biege-dark: #fdda52;
+  --red: #d30e14;
+  --button-hover: #af252a;
+  --invalid: #d30e14;
+  --blue-dark: #27007a;
+  --black: #000000;
+  --brown: #681e00;
+  --white: #ffffff;
+  --backdrop: rgba(0, 0, 0, 0.3);
+
+  --nav-link-color: #05065a;
+  --bg: #05003a;
+  --menu-gradient: linear-gradient(120deg, #f4db6c, #fff8d8, #f4db6c);
+  --modal-bg-radial: radial-gradient(#d3c587 0%, #f4db6c 100%);
+  --modal-bg: linear-gradient(90deg, rgba(244, 219, 108, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(244, 219, 108, 1) 100%);
+
+  --paragmatica: 'Pragmatica regular', verdana;
+  --paragmatica-bold: 'Pragmatica bold', verdana;
+  --serif: 'serif', sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+//preloader
+@import './components/preloader';
+
+//Basics
+@import './basics/fonts';
+@import './basics/reset';
+@import './basics/typography';
+@import './basics/animations';
+
+//Sections
+@import './sections/history';
+@import './sections/promo';
+@import './sections/hero';
+@import './sections/rules';
+@import './sections/prizes';
+@import './sections/test';
+@import './sections/lk';
+@import './sections/winners';
+@import './sections/slider';
+
+//Components
+@import './components/body';
+@import './components/space';
+@import './components/section';
+@import './components/header';
+@import './components/burger';
+@import './components/menu';
+@import './components/footer';
+@import './components/buttons';
+@import './components/modal';
+@import './components/form';
+@import './components/runText';
+@import './components/planet';
+@import './components/winnersTable';
+@import './components/pagination';
+
+// @media screen and (min-width: 1366px) {
+//   min-width: 196px;
+// }
+// @media screen and (min-width: 1280px) and (max-width: 1365px) {
+//   min-width: 196px;
+// }
+// @media screen and (min-width: 1024px) and (max-width: 1279px) {
+//   min-width: auto;
+// }
+// @media screen and (min-width: 768px) and (max-width: 1023px) {
+//   min-width: 196px;
+// }
+// @media screen and (max-width: 767px) {
+//   min-width: 196px;
+// }

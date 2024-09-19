@@ -1,0 +1,104 @@
+.header {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 68px;
+  background: var(--white);
+  background: linear-gradient(80deg, #f8f2d5 0%, #ffffff 10%, #ffffff 40%, #f8f2d5 60%, #ffffff 75%, #ffffff 85%, #f8f2d5 100%);
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  .section-container {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  @media screen and (max-width: 767px) {
+    height: 50px;
+  }
+}
+
+.logo {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  align-content: flex-end;
+  gap: 32px;
+  position: relative;
+  top: -4px;
+
+  img,
+  picture {
+    display: block;
+    height: auto;
+  }
+
+  .logo-alenka {
+    width: 100px;
+  }
+
+  .logo-magnit {
+    width: 120px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 32px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    gap: 20px;
+    .logo-alenka {
+      width: 70px;
+    }
+    .logo-magnit {
+      width: 80px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    top: 0px;
+    gap: 14px;
+    .logo-alenka {
+      width: 78px;
+    }
+    .logo-magnit {
+      width: 30px;
+    }
+  }
+}
+
+.header__buttons {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  gap: 16px;
+  .button.button--icon {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    .button.button--icon {
+      display: flex;
+    }
+  }
+}
+
+.header__rocket {
+  position: absolute;
+  width: 120px;
+  right: 24px;
+  left: 100%;
+  transform: translate(-100%, -20px);
+  margin-left: -24px;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+  @media screen and (max-width: 850px) {
+    display: none;
+  }
+  @media screen and (max-width: 1279px) {
+    width: 70px;
+    transform: translate(-90%, -12px);
+  }
+}
