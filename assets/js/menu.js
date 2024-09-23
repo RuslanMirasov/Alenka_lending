@@ -9,7 +9,7 @@ const handleMenuBackdropClick = e => {
   }
 };
 
-const menuToggle = () => {
+export const menuToggle = () => {
   nenuBackdrop.classList.toggle('is-open');
   burger.classList.toggle('is-open');
   if (!document.body.classList.contains('freez')) {

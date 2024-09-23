@@ -1,6 +1,3 @@
-import { validateForm } from './form-validation.js';
-
-const testForm = document.querySelector('#test-form');
 const steps = document.querySelectorAll('[data-step]');
 const substeps = document.querySelectorAll('[data-substep]');
 const stepButtons = document.querySelectorAll('[data-tostep]');
@@ -38,7 +35,7 @@ const goToStep = number => {
   }, 300);
 };
 
-const goToSubstep = number => {
+export const goToSubstep = number => {
   const stepCounterWrapper = document.querySelector('.step-counter');
   number !== 2 ? stepCounterWrapper.classList.remove('hidden') : stepCounterWrapper.classList.add('hidden');
   closeAllSubsteps();
@@ -72,19 +69,3 @@ const handleChangeInputValues = e => {
 inputButtons.forEach(button => {
   button.addEventListener('click', handleChangeInputValues);
 });
-
-const handleTestFormSubmit = e => {
-  const form = e.target;
-  const formData = new FormData(form);
-
-  // Выводим данные формы в консоль
-  const formObject = Object.fromEntries(Array.from(formData.entries()).map(([key, value]) => [key, value]));
-  console.log(formObject);
-
-  alert('👍 Успешно отправляем форму теста. Данные выводим в консоль.');
-  goToSubstep(2);
-  //Очищаем форму
-  e.target.reset();
-};
-
-testForm.addEventListener('submit', e => validateForm(e, handleTestFormSubmit));
