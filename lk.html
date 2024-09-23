@@ -322,7 +322,7 @@
         <div class="modal" id="login">
           <button type="button" class="modal__close"></button>
           <h2 class="modal__title">Авторизация</h2>
-          <form action="https://mirasov.dev/" method="POST" class="form" novalidate>
+          <form action="https://mirasov.dev/" method="POST" class="form" id="login-form" novalidate>
             <label class="label">
               <p class="label__text">Email</p>
               <input type="email" name="email" class="input" required />
@@ -343,7 +343,7 @@
         <div class="modal" id="registration">
           <button type="button" class="modal__close"></button>
           <h2 class="modal__title">Регистрация</h2>
-          <form action="#" method="POST" class="form" novalidate>
+          <form action="#" method="POST" class="form" id="registration-form" novalidate>
             <label class="label">
               <p class="label__text">Фамилия*</p>
               <input type="text" name="sername" class="input" required />
@@ -438,7 +438,7 @@
           <button type="button" class="modal__close"></button>
           <h2 class="modal__title">Ввод данных чека</h2>
           <p class="modal__subtitle">Внимательно введите <br />данные чека в поля ниже</p>
-          <form action="#" method="POST" class="form" novalidate>
+          <form action="#" method="POST" class="form" id="сheque-data-form" novalidate>
             <label class="label">
               <p class="label__text">ФН</p>
               <input type="text" name="fn" class="input" />
@@ -474,7 +474,7 @@
         <div class="modal" id="сheque-photo">
           <button type="button" class="modal__close"></button>
           <h2 class="modal__title">Загрузка чека</h2>
-          <form action="#" method="POST" class="form" enctype="multipart/form-data" novalidate>
+          <form action="#" method="POST" class="form" id="download-сheque-form" enctype="multipart/form-data" novalidate>
             <div class="download-file">
               <label class="label-for-file">
                 <input type="file" name="сheque" class="input input-file" required />
@@ -493,7 +493,7 @@
         <div class="modal" id="forgot-password">
           <button type="button" class="modal__close"></button>
           <h2 class="modal__title">Восстановите пароль</h2>
-          <form action="#" method="POST" class="form" novalidate>
+          <form action="#" method="POST" class="form" id="forgot-password-form" novalidate>
             <label class="label">
               <p class="label__text">Email указанный при регистрации</p>
               <input type="email" name="email" class="input" required />
@@ -509,7 +509,7 @@
         <div class="modal" id="callback">
           <button type="button" class="modal__close"></button>
           <h2 class="modal__title">Обратная связь</h2>
-          <form action="#" method="POST" class="form" novalidate>
+          <form action="#" method="POST" class="form" id="callback-form" novalidate>
             <label class="label">
               <p class="label__text">Имя*</p>
               <input type="text" name="name" class="input" required />
@@ -546,6 +546,14 @@
           </form>
         </div>
 
+        <!-- CONFIRM-->
+        <div class="modal" id="confirm">
+          <button type="button" class="modal__close"></button>
+          <h2 class="modal__title">Сообщение отправлено</h2>
+          <p class="modal__subtitle">Наш менеджер свяжется с вами <br />в ближайшее время</p>
+          <button type="button" class="button button--submit" onclick="closeModal()">Закрыть</button>
+        </div>
+
         <!-- PASSWORD CONFIRM-->
         <div class="modal" id="confirm-password">
           <button type="button" class="modal__close"></button>
@@ -554,7 +562,7 @@
           <button type="button" class="button button--submit" onclick="closeModal()">Продолжить</button>
         </div>
 
-        <!-- CHECK DOWNLOAD CONFIRM-->
+        <!-- CHECK DOWNLOAD CONFIRM--->
         <div class="modal" id="confirm-сheque-download">
           <button type="button" class="modal__close"></button>
           <h2 class="modal__title">Чек загружен</h2>
