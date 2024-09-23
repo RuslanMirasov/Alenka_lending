@@ -15,7 +15,7 @@
     }
     @media screen and (max-width: 767px) {
       width: 109px;
-      transform: translate(50%, 70px);
+      transform: translate(50%, 70px) scaleX(-1);
     }
   }
   .scroll-down {

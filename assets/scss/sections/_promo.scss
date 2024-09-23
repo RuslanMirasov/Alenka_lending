@@ -13,6 +13,11 @@
     width: 80%;
     min-width: 1200px;
     max-width: 80%;
+    @media screen and (min-width: 1441px) {
+      min-width: 1300px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
   }
 }
 
@@ -92,6 +97,7 @@
     border-radius: 16px;
     z-index: 1;
     padding: 12px;
+    padding-top: 8px;
     span {
       font-size: 14px;
       line-height: 1;
@@ -125,7 +131,7 @@
     width: 160px;
   }
   .promo-title {
-    font-size: 60px;
+    font-size: 56px;
   }
   .promo-subtitle {
     font-size: 28px;
@@ -192,6 +198,9 @@
   }
   .promo-logo {
     width: 110px;
+  }
+  .promo-title {
+    width: 100%;
   }
 }
 

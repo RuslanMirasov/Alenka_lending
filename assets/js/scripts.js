@@ -9,13 +9,37 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // SCROLL TO BLOCK
+  // refs.scrollLinks.forEach(link => {
+  //   link.addEventListener('click', function (e) {
+  //     e.preventDefault();
+  //     const target = `.${this.dataset.scrollto}`;
+  //     const rect = document.querySelector(target).getBoundingClientRect();
+  //     const distance = rect.top + window.scrollY - refs.header.getBoundingClientRect().height;
+  //     window.scrollTo({ top: distance, left: 0, behavior: 'smooth' });
+  //   });
+  // });
+
+  // SCROLL TO BLOCK
   refs.scrollLinks.forEach(link => {
     link.addEventListener('click', function (e) {
       e.preventDefault();
-      const target = `.${this.dataset.scrollto}`;
-      const rect = document.querySelector(target).getBoundingClientRect();
-      const distance = rect.top + window.scrollY - refs.header.getBoundingClientRect().height;
-      window.scrollTo({ top: distance, left: 0, behavior: 'smooth' });
+
+      const targetId = this.getAttribute('href'); // Получаем значение href, например #prize
+      const targetElement = document.querySelector(targetId); // Ищем элемент с этим id
+
+      if (targetElement) {
+        const rect = targetElement.getBoundingClientRect();
+        const distance = rect.top + window.scrollY - refs.header.getBoundingClientRect().height;
+
+        // Плавная прокрутка
+        window.scrollTo({ top: distance, left: 0, behavior: 'smooth' });
+
+        // Используем setTimeout, чтобы добавить хэш после завершения прокрутки
+        setTimeout(() => {
+          // Добавляем хэш в адресную строку, не вызывая мгновенную прокрутку
+          history.pushState(null, null, targetId);
+        }, 500); // Задержка в зависимости от продолжительности прокрутки
+      }
     });
   });
 

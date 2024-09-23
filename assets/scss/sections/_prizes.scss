@@ -109,6 +109,14 @@
   }
   > .title {
     font-size: 32px;
+    margin-bottom: -20px;
+    @media screen and (max-width: 1023px) {
+      margin-bottom: 0px;
+    }
+    @media screen and (max-width: 767px) {
+      max-width: 280px;
+      margin: 0 auto;
+    }
   }
   ul {
     display: flex;
@@ -170,6 +178,10 @@
     @media screen and (max-width: 1023px) {
       font-size: 16px;
       min-height: 1px;
+    }
+    @media screen and (max-width: 767px) {
+      max-width: 280px;
+      margin: 0 auto;
     }
   }
 }

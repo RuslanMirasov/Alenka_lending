@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-THDFLCV4');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -20,6 +35,12 @@
     <title>Алёнка</title>
   </head>
   <body class="body">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THDFLCV4" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!--Preloader-->
     <div class="preloader">
       <div class="space-bg">
@@ -38,7 +59,7 @@
       <div class="section-container">
         <!--Logo-->
         <div class="logo">
-          <a href="#" data-scrollto="section--hero" class="logo-alenka">
+          <a href="#main" data-scrollto="section--hero" class="logo-alenka">
             <img src="./assets/img/svg/logo.svg" alt="Алёнка" />
           </a>
           <a href="#" target="_blank" class="logo-magnit">
@@ -55,10 +76,10 @@
             <nav class="menu">
               <menu class="menu__list">
                 <li><a href="#" class="menu__link" data-history>История</a></li>
-                <li><a href="#" class="menu__link" data-scrollto="section--rules">Правила</a></li>
-                <li><a href="#" class="menu__link" data-scrollto="section--prizes">Призы</a></li>
-                <li><a href="#" class="menu__link" data-scrollto="scrollto--test">Тест</a></li>
-                <li><a href="#" class="menu__link" data-scrollto="section--winners">Победители</a></li>
+                <li><a href="#rules" class="menu__link" data-scrollto>Правила</a></li>
+                <li><a href="#prizes" class="menu__link" data-scrollto>Призы</a></li>
+                <li><a href="#test" class="menu__link" data-scrollto>Тест</a></li>
+                <li><a href="#winners" class="menu__link" data-scrollto>Победители</a></li>
                 <li><a href="#" class="menu__link" data-modal="callback">Обратная связь</a></li>
                 <li>
                   <a href="#" class="button button--blue" data-modal="login"> <img src="./assets/img/svg/lk.svg" alt="Алёнка" /> <span>Вход</span></a>
@@ -86,7 +107,7 @@
       </div>
     </header>
 
-    <main class="main">
+    <main class="main" id="main">
       <!--Section--HERO-->
       <section class="section section--hero">
         <div class="space-bg">
@@ -116,7 +137,7 @@
               </div>
             </div>
           </div>
-          <a href="#" data-scrollto="section--rules" class="scroll-down">
+          <a href="#rules" data-scrollto="section--rules" class="scroll-down">
             <img src="./assets/img/gif/arrow.gif" alt="Логотип Алёнка" />
           </a>
         </div>
@@ -165,7 +186,7 @@
       </section>
 
       <!--Section--PRIZES-->
-      <section class="section section--prizes" id="preise">
+      <section class="section section--prizes" id="prizes">
         <picture class="yellow-gradient">
           <source media="(min-width:1024px)" srcset="./assets/img/svg/bg.svg" />
           <source media="(max-width:1023px)" srcset="./assets/img/svg/bg_mobil.svg" />
@@ -191,7 +212,7 @@
                 <li>
                   <article class="prize">
                     <div class="prize__image">
-                      <img src="./assets/img/prizes/2.png" alt="Приз" />
+                      <img src="./assets/img/prizes/3.png" alt="Приз" />
                     </div>
                     <h4 class="title title--h4">Ночник Астропланетарий</h4>
                     <p>Каждую среду в течение проекта будут выбираться 6 победителей по зарегистрированным чекам за прошедшую неделю</p>
@@ -200,7 +221,7 @@
                 <li>
                   <article class="prize">
                     <div class="prize__image">
-                      <img src="./assets/img/prizes/3.png" alt="Приз" />
+                      <img src="./assets/img/prizes/2.png" alt="Приз" />
                     </div>
                     <h4 class="title title--h4">Космический конструктор</h4>
                     <p>Каждую среду в течение проекта будут выбираться 7 победителей по чекам за прошедшую неделю</p>
@@ -487,8 +508,9 @@
                 <input type="checkbox" name="policy" class="checkbox" data-agree />
                 <p class="label__text">
                   <span>
-                    Я ознакомился с <a href="#" target="_blank">Правилами акции</a>, <a href="#" target="_blank">Пользовательским соглашением</a> и
-                    даю своё согласие на обработку персональных данных
+                    Я ознакомился с <a href="./assets/pdf/rules.pdf" target="_blank">Правилами акции</a>,
+                    <a href="./assets/pdf/rules.pdf" target="_blank">Пользовательским соглашением</a> и даю своё согласие на обработку персональных
+                    данных
                   </span>
                 </p>
               </label>

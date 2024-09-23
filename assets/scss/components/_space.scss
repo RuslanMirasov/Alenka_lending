@@ -6,7 +6,7 @@
   height: 100%;
   overflow: hidden;
   z-index: 0;
-  background: #000000 url('../img/svg/space.svg') repeat left top;
+  background: var(--bg) url('../img/svg/space.svg') repeat left top;
 
   img {
     opacity: 1;

@@ -10,6 +10,14 @@
     span {
       color: var(--biege);
     }
+    br {
+      &:nth-child(1) {
+        display: none;
+        @media screen and (max-width: 454px) {
+          display: block;
+        }
+      }
+    }
   }
   @media screen and (max-width: 767px) {
     padding-top: 100px;
@@ -51,7 +59,6 @@
     position: absolute;
     margin-left: 720px;
     @media screen and (max-width: 1279px) {
-      font-size: 18px;
       position: relative;
       margin-left: 0px;
     }

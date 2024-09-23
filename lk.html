@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-THDFLCV4');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -21,6 +36,12 @@
     <title>Алёнка | Личный кабинет</title>
   </head>
   <body class="body">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THDFLCV4" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!--Preloader-->
     <div class="preloader">
       <div class="space-bg">
@@ -57,7 +78,7 @@
               <menu class="menu__list">
                 <li><a href="#" class="menu__link" data-history>История</a></li>
                 <li><a href="./#rules" class="menu__link">Правила</a></li>
-                <li><a href="./#preise" class="menu__link">Призы</a></li>
+                <li><a href="./#prizes" class="menu__link">Призы</a></li>
                 <li><a href="./#test" class="menu__link">Тест</a></li>
                 <li><a href="./#winners" class="menu__link">Победители</a></li>
                 <li><a href="#" class="menu__link" data-modal="callback">Обратная связь</a></li>
@@ -143,7 +164,7 @@
           <img src="./assets/img/svg/winners_bg_mobil.svg" alt="Желтый градиент" />
         </picture>
         <div class="section-container">
-          <!--Winners-->
+          <!--Winners (иконки статусов => class="waiting / confirm / rejected")-->
           <table class="winnersTable">
             <thead>
               <tr>
@@ -176,13 +197,13 @@
                 <td>125 1234 123456</td>
                 <td>дд.мм.гггг</td>
                 <td>Принят</td>
-                <td class="rejected">Попробуйте ещё раз</td>
+                <td class="confirm">Набор продукции Алёнка</td>
               </tr>
               <tr>
                 <td>125 1234 123456</td>
                 <td>дд.мм.гггг</td>
                 <td>Принят</td>
-                <td class="rejected">Чек отклонен</td>
+                <td class="confirm">Набор продукции Алёнка</td>
               </tr>
             </tbody>
           </table>
@@ -218,7 +239,7 @@
         </div>
         <div class="section-container">
           <h2 class="title title--h1">
-            Мои образы из вселенной <br />
+            Мои образы <br />из вселенной <br />
             <span>«Взрывная карамель»</span> Алёнки
           </h2>
           <p class="subtitle subtitle--lk">
@@ -349,8 +370,9 @@
                 <input type="checkbox" name="policy" class="checkbox" data-agree />
                 <p class="label__text">
                   <span>
-                    Я ознакомился с <a href="#" target="_blank">Правилами акции</a>, <a href="#" target="_blank">Пользовательским соглашением</a> и
-                    даю своё согласие на обработку персональных данных
+                    Я ознакомился с <a href="./assets/pdf/rules.pdf" target="_blank">Правилами акции</a>,
+                    <a href="./assets/pdf/rules.pdf" target="_blank">Пользовательским соглашением</a> и даю своё согласие на обработку персональных
+                    данных
                   </span>
                 </p>
               </label>

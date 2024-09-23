@@ -12,7 +12,7 @@
   --white: #ffffff;
   --backdrop: rgba(0, 0, 0, 0.3);
   --nav-link-color: #05065a;
-  --bg: #05003a;
+  --bg: #030025;
   --menu-gradient: linear-gradient(120deg, #f4db6c, #fff8d8, #f4db6c);
   --modal-bg-radial: radial-gradient(#d3c587 0%, #f4db6c 100%);
   --modal-bg: linear-gradient(90deg, rgba(244, 219, 108, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(244, 219, 108, 1) 100%);
@@ -701,6 +701,9 @@ h6 {
     font-size: 28px;
     text-align: center;
   }
+  .final-slide .final-slide__text h2 br:nth-child(1) {
+    display: block;
+  }
 }
 .final-slide .final-slide__text h2 span {
   color: var(--white);
@@ -782,12 +785,22 @@ h6 {
 .scene--7 .history-text__item--4 {
   opacity: 1;
 }
+@media screen and (max-width: 1023px) {
+  .scene--7 .history-text__item--4 {
+    font-size: 26px;
+  }
+}
 .scene--7 .magnit-logo2 {
   transform: scale(1) translate(0%, 0%);
 }
 
 .scene--6 .history-text__item--4 {
   opacity: 1;
+}
+@media screen and (max-width: 1023px) {
+  .scene--6 .history-text__item--4 {
+    font-size: 26px;
+  }
 }
 .scene--6 .history-rocket {
   transform: scale(0.3) translate(100%, -10%);
@@ -800,12 +813,22 @@ h6 {
 .scene--6 .karamel-planet {
   opacity: 1;
 }
+@media screen and (max-width: 1023px) {
+  .scene--6 .karamel-planet {
+    transform: translate(65%, -10%);
+  }
+}
 .scene--6 .karamel-planet .planet {
   transform: scale(1);
 }
 
 .scene--5 .history-text__item--3 {
   opacity: 1;
+}
+@media screen and (max-width: 1023px) {
+  .scene--5 .history-text__item--3 {
+    color: var(--white);
+  }
 }
 .scene--5 .meteorits {
   transform: scale(1) translate(-100%, 100%);
@@ -829,7 +852,7 @@ h6 {
 }
 @media screen and (max-width: 1023px) {
   .scene--5 .history-rocket {
-    transform: scale(0.2) translate(-200%, 30%);
+    transform: scale(0.2) translate(-190%, -30%);
   }
 }
 
@@ -839,11 +862,16 @@ h6 {
 }
 @media screen and (max-width: 1023px) {
   .scene--4 .history-rocket {
-    transform: scale(0.5) translate(-60%, 25%);
+    transform: scale(0.5) translate(-60%, -5%);
   }
 }
 .scene--4 .history-text__item--2 {
   opacity: 1;
+}
+@media screen and (max-width: 1023px) {
+  .scene--4 .history-text__item--2 {
+    color: var(--white);
+  }
 }
 .scene--4 .meteorits {
   transform: scale(1) translate(5%, -10%);
@@ -922,6 +950,13 @@ h6 {
   width: 80%;
   min-width: 1200px;
   max-width: 80%;
+}
+@media screen and (min-width: 1441px) {
+  .section--promo .section-container {
+    min-width: 1300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .promo-logo {
@@ -1002,6 +1037,7 @@ h6 {
   border-radius: 16px;
   z-index: 1;
   padding: 12px;
+  padding-top: 8px;
   background: var(--white);
 }
 .date-counter li span {
@@ -1033,7 +1069,7 @@ h6 {
     width: 160px;
   }
   .promo-title {
-    font-size: 60px;
+    font-size: 56px;
   }
   .promo-subtitle {
     font-size: 28px;
@@ -1098,6 +1134,9 @@ h6 {
   }
   .promo-logo {
     width: 110px;
+  }
+  .promo-title {
+    width: 100%;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -1193,7 +1232,7 @@ h6 {
 @media screen and (max-width: 767px) {
   .section--hero .planet.planet--small {
     width: 109px;
-    transform: translate(50%, 70px);
+    transform: translate(50%, 70px) scaleX(-1);
   }
 }
 .section--hero .scroll-down {
@@ -1513,6 +1552,7 @@ h6 {
   .rules li .title {
     width: 100%;
     transform: translate(0px, 0%);
+    margin-top: -52px;
   }
   .rules li p {
     font-size: 18px;
@@ -1676,6 +1716,18 @@ h6 {
 }
 .prize__list > .title {
   font-size: 32px;
+  margin-bottom: -20px;
+}
+@media screen and (max-width: 1023px) {
+  .prize__list > .title {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .prize__list > .title {
+    max-width: 280px;
+    margin: 0 auto;
+  }
 }
 .prize__list ul {
   display: flex;
@@ -1753,6 +1805,12 @@ h6 {
   .prize p {
     font-size: 16px;
     min-height: 1px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .prize p {
+    max-width: 280px;
+    margin: 0 auto;
   }
 }
 
@@ -2039,12 +2097,12 @@ h6 {
 .section--lk .bg-lines {
   min-height: 120vh;
 }
+.section--lk .hero__runtext {
+  margin-bottom: 10px;
+}
 @media screen and (max-width: 767px) {
   .section--lk {
     margin-top: 0px;
-  }
-  .section--lk .hero__runtext {
-    margin-bottom: 10px;
   }
 }
 
@@ -2104,8 +2162,11 @@ h6 {
   cursor: pointer;
   color: var(--white);
   border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  opacity: 0.5;
+  transition: 0.3s;
 }
 .user-info button:hover {
+  opacity: 1;
   color: var(--biege);
   border-bottom: 1px solid var(--biege);
 }
@@ -2127,6 +2188,14 @@ h6 {
 }
 .section--slider .title span {
   color: var(--biege);
+}
+.section--slider .title br:nth-child(1) {
+  display: none;
+}
+@media screen and (max-width: 454px) {
+  .section--slider .title br:nth-child(1) {
+    display: block;
+  }
 }
 @media screen and (max-width: 767px) {
   .section--slider {
@@ -2177,7 +2246,6 @@ h6 {
 }
 @media screen and (max-width: 1279px) {
   .slider-button .try-count {
-    font-size: 18px;
     position: relative;
     margin-left: 0px;
   }
@@ -2350,7 +2418,7 @@ section {
   height: 100%;
   overflow: hidden;
   z-index: 0;
-  background: #000000 url("../img/svg/space.svg") repeat left top;
+  background: var(--bg) url("../img/svg/space.svg") repeat left top;
 }
 .space-bg img {
   opacity: 1;
@@ -3564,7 +3632,7 @@ h2.modal__title {
   0% {
     transform: translate(0%, 0%);
   }
-  49.999999% {
+  49.99% {
     transform: translate(-100%, 0%);
   }
   50% {
@@ -3579,7 +3647,7 @@ h2.modal__title {
   0% {
     transform: translate(0%, 0%);
   }
-  49.999999% {
+  49.99% {
     transform: translate(-100%, 0%);
   }
   50% {
@@ -3596,7 +3664,7 @@ h2.modal__title {
   50% {
     transform: translate(-100%, 0%);
   }
-  99.999999% {
+  99.99% {
     transform: translate(-200%, 0%);
   }
   100% {
@@ -3610,7 +3678,7 @@ h2.modal__title {
   50% {
     transform: translate(-100%, 0%);
   }
-  99.999999% {
+  99.99% {
     transform: translate(-200%, 0%);
   }
   100% {
@@ -3956,8 +4024,8 @@ h2.modal__title {
   color: var(--red);
 }
 .pagination-btn svg {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   stroke: var(--red);
 }
 @media screen and (max-width: 767px) {

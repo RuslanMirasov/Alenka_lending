@@ -5,11 +5,11 @@
   .bg-lines {
     min-height: 120vh;
   }
+  .hero__runtext {
+    margin-bottom: 10px;
+  }
   @media screen and (max-width: 767px) {
     margin-top: 0px;
-    .hero__runtext {
-      margin-bottom: 10px;
-    }
   }
 }
 
@@ -68,7 +68,10 @@
     cursor: pointer;
     color: var(--white);
     border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    opacity: 0.5;
+    transition: 0.3s;
     &:hover {
+      opacity: 1;
       color: var(--biege);
       border-bottom: 1px solid var(--biege);
     }

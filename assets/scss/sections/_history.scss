@@ -293,6 +293,11 @@
       @media screen and (max-width: 1023px) {
         font-size: 28px;
         text-align: center;
+        br {
+          &:nth-child(1) {
+            display: block;
+          }
+        }
       }
       span {
         color: var(--white);
@@ -367,6 +372,9 @@
   }
   .history-text__item--4 {
     opacity: 1;
+    @media screen and (max-width: 1023px) {
+      font-size: 26px;
+    }
   }
   .magnit-logo2 {
     transform: scale(1) translate(0%, 0%);
@@ -376,6 +384,9 @@
 .scene--6 {
   .history-text__item--4 {
     opacity: 1;
+    @media screen and (max-width: 1023px) {
+      font-size: 26px;
+    }
   }
   .history-rocket {
     transform: scale(0.3) translate(100%, -10%);
@@ -387,6 +398,9 @@
   }
   .karamel-planet {
     opacity: 1;
+    @media screen and (max-width: 1023px) {
+      transform: translate(65%, -10%);
+    }
     .planet {
       transform: scale(1);
     }
@@ -396,6 +410,9 @@
 .scene--5 {
   .history-text__item--3 {
     opacity: 1;
+    @media screen and (max-width: 1023px) {
+      color: var(--white);
+    }
   }
   .meteorits {
     transform: scale(1) translate(-100%, 100%);
@@ -415,7 +432,8 @@
     transform: scale(0.3) translate(55%, 20%);
     opacity: 1;
     @media screen and (max-width: 1023px) {
-      transform: scale(0.2) translate(-200%, 30%);
+      // transform: scale(0.2) translate(-200%, 30%);
+      transform: scale(0.2) translate(-190%, -30%);
     }
   }
 }
@@ -425,11 +443,15 @@
     transform: scale(0.5) translate(-40%, 60%);
     opacity: 1;
     @media screen and (max-width: 1023px) {
-      transform: scale(0.5) translate(-60%, 25%);
+      // transform: scale(0.5) translate(-60%, 25%);
+      transform: scale(0.5) translate(-60%, -5%);
     }
   }
   .history-text__item--2 {
     opacity: 1;
+    @media screen and (max-width: 1023px) {
+      color: var(--white);
+    }
   }
   .meteorits {
     transform: scale(1) translate(5%, -10%);
