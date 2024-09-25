@@ -19,5 +19,9 @@ export const menuToggle = () => {
   document.body.classList.remove('freez');
 };
 
-burger.addEventListener('click', menuToggle);
-nenuBackdrop.addEventListener('click', handleMenuBackdropClick);
+if (burger) {
+  burger.addEventListener('click', menuToggle);
+}
+if (nenuBackdrop) {
+  nenuBackdrop.addEventListener('click', handleMenuBackdropClick);
+}
