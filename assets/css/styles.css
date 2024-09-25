@@ -1587,7 +1587,7 @@ h6 {
   text-align: center;
   overflow: visible;
   color: var(--brown);
-  background-size: 100% auto;
+  background: var(--bg) url("../img/svg/space.svg") repeat left top;
 }
 .section--prizes .section-container {
   z-index: 2;
@@ -3046,6 +3046,8 @@ section {
   line-height: 1;
   transition: 0.3s;
   z-index: 1;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .button:hover {
   background: var(--button-hover);

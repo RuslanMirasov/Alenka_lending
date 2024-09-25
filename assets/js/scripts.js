@@ -15,7 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', function (e) {
       e.preventDefault();
       if (window.innerWidth < 1024) {
-        menuToggle();
+        if (document.querySelector('[data-js="menu-backdrop"]').classList.contains('is-open')) {
+          menuToggle();
+        }
       }
       const targetId = this.getAttribute('href');
       const targetElement = document.querySelector(targetId);

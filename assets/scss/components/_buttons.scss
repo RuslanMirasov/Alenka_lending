@@ -33,6 +33,8 @@
   line-height: 1;
   transition: 0.3s;
   z-index: 1;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
   &:hover {
     background: var(--button-hover);
   }
