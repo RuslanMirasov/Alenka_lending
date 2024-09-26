@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <!-- Google Tag Manager -->
-    <script>
+    <!-- <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
@@ -13,7 +13,7 @@
         j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
       })(window, document, 'script', 'dataLayer', 'GTM-THDFLCV4');
-    </script>
+    </script> -->
     <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8" />
@@ -37,9 +37,9 @@
   </head>
   <body class="body">
     <!-- Google Tag Manager (noscript) -->
-    <noscript>
+    <!-- <noscript>
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THDFLCV4" height="0" width="0" style="display: none; visibility: hidden"></iframe>
-    </noscript>
+    </noscript> -->
     <!-- End Google Tag Manager (noscript) -->
 
     <!--Preloader-->
@@ -156,15 +156,8 @@
         </div>
       </section>
 
-      <!--Section--WINNERS-->
-      <section class="section section--winners">
-        <picture class="yellow-gradient">
-          <source media="(min-width:1024px)" srcset="./assets/img/svg/winners_bg.svg" />
-          <source media="(max-width:1023px)" srcset="./assets/img/svg/winners_bg_mobil.svg" />
-          <img src="./assets/img/svg/winners_bg_mobil.svg" alt="Желтый градиент" />
-        </picture>
+      <section class="section section--concave">
         <div class="section-container">
-          <!--Winners (иконки статусов => class="waiting / confirm / rejected")-->
           <table class="winnersTable">
             <thead>
               <tr>
@@ -207,7 +200,6 @@
               </tr>
             </tbody>
           </table>
-          <!--winners pagination-->
           <div class="pagination">
             <a href="#" class="pagination-btn" aria-label="left pagination">
               <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -230,6 +222,79 @@
           </button>
         </div>
       </section>
+
+      <!--Section--WINNERS-->
+      <!-- <section class="section section--winners">
+        <picture class="yellow-gradient">
+          <source media="(min-width:1024px)" srcset="./assets/img/svg/winners_bg.svg" />
+          <source media="(max-width:1023px)" srcset="./assets/img/svg/winners_bg_mobil.svg" />
+          <img src="./assets/img/svg/winners_bg_mobil.svg" alt="Желтый градиент" />
+        </picture>
+        <div class="section-container">
+          <table class="winnersTable">
+            <thead>
+              <tr>
+                <th>Чек</th>
+                <th>Дата</th>
+                <th>Статус</th>
+                <th>Приз</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>125 1234 123456</td>
+                <td>дд.мм.гггг</td>
+                <td>На модерации</td>
+                <td class="waiting">Ожидает розыгрыша</td>
+              </tr>
+              <tr>
+                <td>125 1234 123456</td>
+                <td>дд.мм.гггг</td>
+                <td>Ожидает</td>
+                <td class="confirm">Космический конструктор</td>
+              </tr>
+              <tr>
+                <td>125 1234 123456</td>
+                <td>дд.мм.гггг</td>
+                <td>Принят</td>
+                <td class="confirm">Набор продукции Алёнка</td>
+              </tr>
+              <tr>
+                <td>125 1234 123456</td>
+                <td>дд.мм.гггг</td>
+                <td>Принят</td>
+                <td class="confirm">Набор продукции Алёнка</td>
+              </tr>
+              <tr>
+                <td>125 1234 123456</td>
+                <td>дд.мм.гггг</td>
+                <td>Принят</td>
+                <td class="confirm">Набор продукции Алёнка</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pagination">
+            <a href="#" class="pagination-btn" aria-label="left pagination">
+              <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 1L2 7.5L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="#" class="pagination-btn active">1</a>
+            <a href="#" class="pagination-btn">2</a>
+            <a href="#" class="pagination-btn">3</a>
+            <a href="#" class="pagination-btn">4</a>
+            <a href="#" class="pagination-btn" aria-label="right pagination">
+              <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7.5L1 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+          <button type="button" data-modal="сheque" class="button button--big">
+            <span>ЗАРЕГИСТРИРОВАТЬ ЧЕК</span>
+            <img src="./assets/img/svg/arr-right.svg" alt="arrow" />
+          </button>
+        </div>
+      </section> -->
 
       <!--Section--SLIDER-->
       <section class="section section--slider">

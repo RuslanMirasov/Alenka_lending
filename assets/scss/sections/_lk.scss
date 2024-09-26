@@ -10,6 +10,10 @@
   }
   @media screen and (max-width: 767px) {
     margin-top: 0px;
+    .planet.planet--small {
+      width: 109px;
+      transform: translate(50%, 230px) scaleX(-1);
+    }
   }
 }
 

@@ -1,8 +1,6 @@
 import { formValidation } from './form-validation.js';
-import { goToSubstep } from './test.js';
 import { popup } from './modal.js';
 
-const testForm = document.querySelector('#test-form');
 const loginForm = document.querySelector('#login-form');
 const registrationForm = document.querySelector('#registration-form');
 const сhequeDataForm = document.querySelector('#сheque-data-form');
@@ -14,14 +12,6 @@ const consoleAndResetData = form => {
   const formData = new FormData(form);
   console.log(Object.fromEntries(Array.from(formData.entries()).map(([key, value]) => [key, value])));
   form.reset();
-};
-
-// ВАЛИДАЦИЯ И ОБРАБОТКА ФОРМЫ "ТЕСТА" (#test-form)
-const handleTestFormSubmit = e => {
-  e.preventDefault();
-  if (!formValidation(e.target)) return;
-  consoleAndResetData(e.target); // Заменить эту функцию на логику отправкитеста
-  goToSubstep(2);
 };
 
 // ВАЛИДАЦИЯ И ОБРАБОТКА ФОРМЫ "ЛОГИН" (#login-form)
@@ -69,7 +59,6 @@ const handleCallbackFormSubmit = e => {
   popup('confirm');
 };
 
-testForm.addEventListener('submit', handleTestFormSubmit);
 loginForm.addEventListener('submit', handleLoginFormSubmit);
 registrationForm.addEventListener('submit', handleRegisterFormSubmit);
 сhequeDataForm.addEventListener('submit', handleChequeDataFormSubmit);
