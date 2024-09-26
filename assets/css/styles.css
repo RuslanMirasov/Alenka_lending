@@ -134,6 +134,8 @@ button {
   border: none;
   padding: 0;
   cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
@@ -141,6 +143,8 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: inherit;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .cube:before {
@@ -1217,6 +1221,9 @@ h6 {
   .section--hero {
     padding-top: 50px;
   }
+  .section--hero .hero__runtext {
+    margin-bottom: 20px;
+  }
 }
 .section--hero .planet.planet--small {
   transform: translate(-50%, 100px);
@@ -1443,6 +1450,11 @@ h6 {
   width: 1000%;
   z-index: 1;
 }
+@media screen and (max-width: 767px) {
+  .hero__runtext {
+    margin-bottom: 20px;
+  }
+}
 
 .section--rules {
   padding-top: 70px;
@@ -1587,91 +1599,18 @@ h6 {
   text-align: center;
   overflow: visible;
   color: var(--brown);
-  background: var(--bg) url("../img/svg/space.svg") repeat left top;
 }
 .section--prizes .section-container {
   z-index: 2;
 }
-
-.section--prizes .button.button--big,
-.section--winners .button.button--big {
-  position: relative;
-  bottom: -55px;
-  margin: 0 auto;
-}
-@media screen and (max-width: 1279px) {
-  .section--prizes .button.button--big,
-.section--winners .button.button--big {
-    bottom: -65px;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .section--prizes .button.button--big,
-.section--winners .button.button--big {
-    bottom: -55px;
-  }
-}
 @media screen and (max-width: 767px) {
-  .section--prizes .button.button--big,
-.section--winners .button.button--big {
-    bottom: -45px;
-  }
-}
-
-.section--winners .button.button--big {
-  margin-top: -55px;
-}
-@media screen and (max-width: 1279px) {
-  .section--winners .button.button--big {
-    margin-top: -65px;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .section--winners .button.button--big {
-    bottom: -88px;
-    margin-top: -75px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .section--winners .button.button--big {
-    bottom: -55px;
-    margin-top: -70px;
-  }
-}
-
-.yellow-gradient {
-  display: block;
-  position: absolute;
-  top: -70px;
-  width: 100%;
-  height: calc(100% + 140px);
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-@media screen and (max-width: 1023px) {
-  .yellow-gradient {
-    top: -50px;
-    height: calc(100% + 100px);
-  }
-}
-@media screen and (max-width: 767px) {
-  .yellow-gradient {
-    top: -30px;
-    height: calc(100% + 60px);
-  }
-}
-.yellow-gradient img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
-@media screen and (max-width: 767px) {
-  .section--winners .yellow-gradient {
-    top: -20px;
-    height: calc(100% + 40px);
+  .section--prizes .button.button--big {
+    margin-bottom: 0px;
+    position: absolute;
+    left: 50%;
+    min-width: 300px;
+    transform: translate(-50%, 0%);
+    top: calc(100% + 8px);
   }
 }
 
@@ -1682,6 +1621,7 @@ h6 {
   align-items: flex-end;
   align-content: flex-end;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 .prizes .title {
   text-transform: uppercase;
@@ -2104,6 +2044,10 @@ h6 {
   .section--lk {
     margin-top: 0px;
   }
+  .section--lk .planet.planet--small {
+    width: 109px;
+    transform: translate(50%, 230px) scaleX(-1);
+  }
 }
 
 .lk-hero {
@@ -2173,6 +2117,76 @@ h6 {
 
 .section.section--winners {
   z-index: 2;
+}
+
+.section--concave {
+  position: relative;
+  z-index: 2;
+  margin-top: -20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background: radial-gradient(70% 243.12% at 49.62% 52.62%, #ffffff 0%, #f4db6c 100%);
+}
+.section--concave::after {
+  content: "";
+  position: absolute;
+  height: 45px;
+  top: -45px;
+  left: 0;
+  right: 0;
+  background: radial-gradient(70% 243.12% at 49.62% 52.62%, #ffffff 0%, #f4db6c 100%);
+  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M 0 0 Q 50 15 100 0 L 100 100 Q 50 85 0 100 Z" fill="white"/></svg>');
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M 0 0 Q 50 200 100 0 L 100 100 Q 50 100 0 100 Z" fill="white"/></svg>');
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+.section--concave::before {
+  content: "";
+  position: absolute;
+  height: 45px;
+  left: 0;
+  right: 0;
+  bottom: -45px;
+  background: radial-gradient(70% 243.12% at 49.62% 52.62%, #ffffff 0%, #f4db6c 100%);
+  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M 0 0 Q 50 15 100 0 L 100 100 Q 50 85 0 100 Z" fill="white"/></svg>');
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M 0 0 Q 50 0 100 0 L 100 100 Q 50 -100 0 100 Z" fill="white"/></svg>');
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+.section--concave .button {
+  margin: 0 auto;
+  margin-bottom: -64px;
+}
+@media screen and (max-width: 1023px) {
+  .section--concave::after {
+    height: 30px;
+    top: -30px;
+  }
+  .section--concave::before {
+    height: 30px;
+    bottom: -30px;
+  }
+  .section--concave .button {
+    margin-bottom: -68px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section--concave::after {
+    height: 15px;
+    top: -15px;
+  }
+  .section--concave::before {
+    height: 15px;
+    bottom: -15px;
+  }
+  .section--concave .button {
+    margin-bottom: -70px;
+    transform: translate(0%, 8px);
+  }
 }
 
 .section--slider {
@@ -3160,10 +3174,10 @@ section {
   top: 0px;
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(211, 14, 20, 0.3);
   opacity: 0;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll;
   pointer-events: none;
   visibility: hidden;
   transition: 0.2s linear 0s;
@@ -3198,9 +3212,9 @@ section {
   overflow: hidden;
   pointer-events: none;
   visibility: hidden;
-  opacity: 0;
-  transform: translate(0px, 20px);
-  transition: opacity 0.3s, transform 0.3s;
+  opacity: 1;
+  transform: translate(0px, 100vh);
+  transition: opacity 0.6s, transform 0.6s;
   background: var(--modal-bg);
   z-index: 1;
 }

@@ -38,6 +38,8 @@ button {
   border: none;
   padding: 0;
   cursor: pointer;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
@@ -45,6 +47,8 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: inherit;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .cube {

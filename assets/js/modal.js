@@ -35,7 +35,7 @@ const unfreezeBody = () => {
     if (menuBackdrop && !menuBackdrop.classList.contains('is-open')) {
       document.body.classList.remove('freez');
     }
-  }, 300);
+  }, 400);
 };
 
 const handleBackdropClick = e => {
