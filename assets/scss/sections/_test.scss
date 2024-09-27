@@ -123,9 +123,13 @@
     }
     b {
       display: block;
-      max-width: 600px;
+      max-width: 780px;
       margin: 0 auto;
       text-align: center;
+      a {
+        color: var(--white);
+        border-bottom: 1px solid var(--white);
+      }
     }
     .button {
       min-width: 400px;

@@ -35,6 +35,7 @@
 @import './basics/reset';
 @import './basics/typography';
 @import './basics/animations';
+@import './basics/dotnet';
 
 //Sections
 @import './sections/history';
@@ -46,6 +47,8 @@
 @import './sections/lk';
 @import './sections/winners';
 @import './sections/slider';
+@import './sections/shere';
+@import './sections/error';
 
 //Components
 @import './components/body';

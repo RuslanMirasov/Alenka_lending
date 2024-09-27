@@ -99,13 +99,16 @@
           <button type="button" class="burger" data-js="burger"><span>burger</span></button>
         </div>
       </div>
+    </header>
+
+    <div class="header-rocket-wrapper">
       <div class="header__rocket cube">
         <div class="rocket">
           <img src="./assets/img/hero/raketa2.png" alt="Ракета" class="animated" />
           <img src="./assets/img/hero/raketa.png" alt="Ракета" />
         </div>
       </div>
-    </header>
+    </div>
 
     <main class="main" id="main">
       <!--Section--HERO-->
@@ -264,43 +267,23 @@
               из шоколадной вселенной «Взрывная карамель»!
             </h2>
             <div class="steps">
-              <p class="step-counter"><span data-js="step-counter">1</span>/3</p>
+              <p class="step-counter"><span data-js="step-counter">1</span>/2</p>
 
               <!--STEP 1-->
-              <div class="step active visible" data-step="1">
+              <div class="step" data-step="1">
                 <div class="step__text">
                   <h2 class="title">Укажи свой пол:</h2>
                 </div>
                 <div class="step__actions">
-                  <button type="button" class="button button--biege full" data-input="sex" data-tostep="2">Мужской</button>
-                  <button type="button" class="button button--biege full" data-input="sex" data-tostep="2">Женский</button>
+                  <button type="button" class="button button--biege full" data-tostep="2">Мужской</button>
+                  <button type="button" class="button button--biege full" data-tostep="2">Женский</button>
                 </div>
               </div>
 
               <!--STEP 2-->
-              <div class="step" data-step="2">
-                <div class="step__text">
-                  <h2 class="title">Выбери какой космический вкус тебе нравится / <br />в какой вселенной <br />ты бы хотел себя увидеть</h2>
-                </div>
-                <div class="step__actions">
-                  <button type="button" class="button button--biege full" data-input="taste" data-tostep="3">Взрывная карамель</button>
-                  <button type="button" class="button button--biege full" data-input="taste" data-tostep="3">Хрустящая сказка</button>
-                  <button type="button" class="button button--biege full" data-input="taste" data-tostep="3">Солёный крекер</button>
-                  <button type="button" class="button button--biege full" data-input="taste" data-tostep="3">Разноцветное драже</button>
-                </div>
-              </div>
-
-              <!--STEP 3-->
-              <div class="step" data-step="3">
+              <div class="step active visible" data-step="2">
                 <!--substep 1-->
-                <div class="step active visible" data-substep="1">
-                  <!--Показываем если мы НЕ зарегистрированы-->
-                  <!-- <div class="step__text full">
-                    <h3 class="title">Зарегистрируйся для того чтобы узнать кто ты из шоколадной вселенной «Взрывная карамель»!</h3>
-                    <button type="button" class="button button--biege" data-modal="registration">Зарегистрироваться</button>
-                  </div> -->
-
-                  <!--Показываем если мы зарегистрированы-->
+                <div class="step" data-substep="1">
                   <div class="step__text">
                     <h3 class="title">Загрузи свою фотографию и узнай кто ты из вселенной «Взрывная карамель»</h3>
                   </div>
@@ -326,19 +309,57 @@
                   </div>
                 </div>
 
-                <!--substep 3-->
-                <div class="step" data-substep="3">
+                <!--substep 2-->
+                <div class="step active visible" data-substep="2">
+                  <!--Ожидание ответа (2 варианта текста - 1) текст2) текст с кнопкой)-->
                   <div class="step__text final">
                     <div class="rocket">
                       <img src="./assets/img/hero/raketa2.png" alt="Ракета" class="animated" />
                       <img src="./assets/img/hero/raketa.png" alt="Ракета" />
                     </div>
-                    <b>
+                    <!-- <b>
                       Ракета в пути и примеряет на тебя новый образ! Обычно это быстро, но при турбулентности может занять до 12 часов. Фотографию
-                      можно будет скачать в личном кабинете.
-                    </b>
-                    <button type="button" class="button button--biege" data-toStep="1">В начало</button>
+                      можно будет скачать в личном кабинете или подождать здесь, она скоро появится..
+                    </b> -->
+                    <b>Фотография появится здесь - <br />не закрывай страницу.</b>
+                    <button type="button" class="button button--biege" data-toStep="1">Не хочу ждать</button>
                   </div>
+                  <!--Ожидание ответа конец-->
+
+                  <!--Фото не прошло модерацию-->
+                  <!-- <div class="step__text final">
+                    <div class="rejected-photo">
+                      <img src="./assets/img/slider/slide_error.png" alt="Фото отклонено" />
+                      <h4 class="biege">Фото не прошло модерацию</h4>
+                      <p>Убедись, что на фотографии именно ты, лицо не перекрыто <br />и повёрнуто на камеру</p>
+                      <button type="button" class="button button--biege" data-toStep="1">Сгенерировать еще</button>
+                    </div>
+                  </div> -->
+                  <!--Фото не прошло модерацию конец-->
+
+                  <!--Поделись своей фотографией в VK-->
+                  <!-- <div class="step__text final">
+                    <div class="shere-block shere-block--mini">
+                      <div class="shere-block__image">
+                        <img src="./assets/img/hero/shere.jpg" alt="Поделиться в вк" class="my-look" />
+                        <div class="shere-block__logos">
+                          <a href="./"><img src="./assets/img/svg/logo-promo-white.svg" alt="Поделиться в вк" /></a>
+                          <a href="./"><img src="./assets/img/svg/magnet.svg" alt="Поделиться в вк" /></a>
+                        </div>
+                      </div>
+                      <div class="shere-block__text">
+                        <h4 class="title">Смотри, кто я <br />в шоколадной <br />вселенной Алёнки <br />«Взрывная карамель»!</h4>
+                      </div>
+                    </div>
+                    <b class="shere-block-instructions">
+                      Поделись своей фотографией в ВК <br />
+                      с хэштегом <span>#Алёнка_в_космосе</span> и получи <br />
+                      шанс выиграть шоколадный набор. <br />
+                      Подробности в <a href="#" target="_blank">правилах акции</a>.
+                    </b>
+                    <button type="button" class="button button--biege" data-modal="registration">Зарегистрироваться</button>
+                  </div> -->
+                  <!--Поделись своей фотографией в VK конец-->
                 </div>
               </div>
             </div>
@@ -347,8 +368,8 @@
         <!--RUNNING TEXT-->
         <div class="hero__runtext">
           <div class="runText" data-runtext="left">
-            <div class="runText__inner">&nbsp;победители победители</div>
-            <div class="runText__inner">победители победители&nbsp;</div>
+            <div class="runText__inner">&nbsp;победители&nbsp;победители&nbsp;победители</div>
+            <div class="runText__inner">победители&nbsp;победители&nbsp;победители&nbsp;</div>
           </div>
         </div>
         <div class="planet planet--medium cube">
@@ -456,6 +477,7 @@
             <label class="label">
               <p class="label__text">Пароль</p>
               <input type="password" name="password" class="input" required />
+              <span class="show-password" data-js="show-password"></span>
             </label>
             <button type="submit" class="button button--submit">Войти</button>
             <ul class="modal__links">

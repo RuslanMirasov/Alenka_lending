@@ -1,0 +1,79 @@
+/*Стили которые не относятся к вёрстке*/
+#uploadCheck .upload-error-message{
+   color:var(--red);
+ }
+ #uploadCheck .modal__links{
+   margin-top:10px;
+ }
+ #uploadCheck button.dz-button{
+   color: #fff;
+   font-size: 12px;
+   max-width: 190px;
+ }
+ 
+ #uploadCheck button.dz-button:before{
+   content:'';
+   display:block;
+   width:38px;
+   height:38px;
+   background:url("../img/svg/plus.svg")no-repeat center center/cover;
+   margin:0 auto;
+ }
+ 
+ #uploadCheck .dz-preview.dz-image-preview .dz-image img{
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+ }
+ #uploadCheck .dz-preview.dz-image-preview .dz-image{
+   width: 100%;
+   height: 100%;
+ }
+ #uploadCheck .dz-preview.dz-image-preview .dz-details,
+ #uploadCheck .dz-preview.dz-image-preview .dz-progress{
+   display:none;
+ }
+ #uploadCheck .dz-preview.dz-image-preview{
+     width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   border-radius:4px;
+ }
+ #uploadCheck .dropzone {
+   border-radius:10px;
+   padding:0;
+ }
+ #uploadCheck a.dz-remove{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   align-content:center;
+   font-size:0px;
+   color:rgba(0,0,0,0);
+   position:absolute;
+   width: 26px;
+   height: 26px;
+   right: -10px;
+   top: -10px;
+   background: var(--red);
+   border-radius: 20px;
+   z-index:999;
+   transition:0.3s;
+ }
+ #uploadCheck a.dz-remove:before{
+     transform: rotate(45deg);
+ }
+ #uploadCheck a.dz-remove:after{
+      transform: rotate(-45deg);
+ }
+ #uploadCheck a.dz-remove:before,
+ #uploadCheck a.dz-remove:after{
+   content: "";
+   width: 14px;
+   height: 2px;
+   border-radius: 2px;
+   background: var(--white);
+   position: absolute;
+   pointer-events: none;
+ }

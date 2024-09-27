@@ -1,4 +1,5 @@
 const inputs = document.querySelectorAll('.input');
+const passwordSwitchers = document.querySelectorAll('[data-js="show-password"]');
 const agreeCheckboxes = document.querySelectorAll('[data-agree]');
 const labelsForFile = document.querySelectorAll('.label-for-file');
 const inputsFile = document.querySelectorAll('.input-file');
@@ -12,6 +13,23 @@ const handleInvalidClassRemove = e => {
   }
   input.classList.remove('invalid');
 };
+
+const handlePasswordToggle = e => {
+  const switcher = e.target;
+  const passwordInput = switcher.closest('.label').querySelector('.input');
+
+  if (switcher.classList.contains('is-show')) {
+    switcher.classList.remove('is-show');
+    passwordInput.setAttribute('type', 'password');
+    return;
+  }
+  switcher.classList.add('is-show');
+  passwordInput.setAttribute('type', 'text');
+};
+
+passwordSwitchers.forEach(switcher => {
+  switcher.addEventListener('click', handlePasswordToggle);
+});
 
 inputs.forEach(input => {
   input.addEventListener('focus', handleInvalidClassRemove);

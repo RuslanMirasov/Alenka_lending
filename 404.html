@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <!-- Google Tag Manager -->
-    <!-- <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-THDFLCV4');
-    </script> -->
-    <!-- End Google Tag Manager -->
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -31,17 +16,10 @@
     <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/icons/apple-touch-icon-144x144.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/icons/apple-touch-icon-152x152.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/icons/apple-touch-icon-180x180.png" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/styles.min.css" />
-    <title>Алёнка | Личный кабинет</title>
+    <title>Алёнка</title>
   </head>
   <body class="body">
-    <!-- Google Tag Manager (noscript) -->
-    <!-- <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THDFLCV4" height="0" width="0" style="display: none; visibility: hidden"></iframe>
-    </noscript> -->
-    <!-- End Google Tag Manager (noscript) -->
-
     <!--Preloader-->
     <div class="preloader">
       <div class="space-bg">
@@ -60,7 +38,7 @@
       <div class="section-container">
         <!--Logo-->
         <div class="logo">
-          <a href="./" class="logo-alenka">
+          <a href="#main" data-scrollto="section--hero" class="logo-alenka">
             <img src="./assets/img/svg/logo.svg" alt="Алёнка" />
           </a>
           <a href="#" target="_blank" class="logo-magnit">
@@ -77,15 +55,13 @@
             <nav class="menu">
               <menu class="menu__list">
                 <li><a href="#" class="menu__link" data-history>История</a></li>
-                <li><a href="./#rules" class="menu__link">Правила</a></li>
-                <li><a href="./#prizes" class="menu__link">Призы</a></li>
-                <li><a href="./#test" class="menu__link">Тест</a></li>
-                <li><a href="./#winners" class="menu__link">Победители</a></li>
+                <li><a href="#rules" class="menu__link" data-scrollto>Правила</a></li>
+                <li><a href="#prizes" class="menu__link" data-scrollto>Призы</a></li>
+                <li><a href="#test" class="menu__link" data-scrollto>Тест</a></li>
+                <li><a href="#winners" class="menu__link" data-scrollto>Победители</a></li>
                 <li><a href="#" class="menu__link" data-modal="callback">Обратная связь</a></li>
                 <li>
-                  <a href="#" class="button button--blue" data-modal="login">
-                    <img src="./assets/img/svg/profile.svg" alt="Алёнка" /> <span>Вход</span></a
-                  >
+                  <a href="#" class="button button--blue" data-modal="login"> <img src="./assets/img/svg/lk.svg" alt="Алёнка" /> <span>Вход</span></a>
                 </li>
               </menu>
             </nav>
@@ -97,7 +73,7 @@
             <span>Загрузить чек</span>
           </button>
           <a href="#" class="button button--icon" data-modal="login">
-            <img src="./assets/img/svg/profile.svg" alt="Алёнка" />
+            <img src="./assets/img/svg/lk.svg" alt="Алёнка" />
           </a>
           <button type="button" class="burger" data-js="burger"><span>burger</span></button>
         </div>
@@ -113,187 +89,24 @@
       </div>
     </div>
 
-    <main class="main">
+    <main class="main" id="main">
       <!--Section--HERO-->
-      <section class="section section--hero section--lk">
+      <section class="section section--hero section--error">
         <div class="space-bg">
           <div class="stars-sky"></div>
           <div class="stars-sky"></div>
-          <img src="./assets/img/hero/meteor.png" alt="Падающая звезда" class="meteor" />
-          <img src="./assets/img/hero/meteor.png" alt="Падающая звезда" class="meteor" />
-          <img src="./assets/img/hero/bg_lines.svg" alt="Фоновые линии" class="bg-lines" />
-        </div>
-        <div class="section-container">
-          <div class="lk-hero">
-            <h1 class="title title--h1">Личный кабинет</h1>
-
-            <ul class="user-info">
-              <li><h2>Марианна Константинопольская</h2></li>
-              <li>
-                <a href="mailto:konstantinmymail@mail.com">
-                  <img src="./assets/img/svg/mail.svg" alt="email" />
-                  <span>konstantinmymail@mail.com</span>
-                </a>
-              </li>
-              <li>
-                <a href="tel:+79999999999">
-                  <img src="./assets/img/svg/phone.svg" alt="email" />
-                  <span>+7 (999) 999-99-99</span>
-                </a>
-              </li>
-              <li><button type="button" class="logout">Выйти</button></li>
-            </ul>
-          </div>
         </div>
 
-        <!--RUNNING TEXT-->
-        <div class="hero__runtext">
-          <div class="runText" data-runtext="left">
-            <div class="runText__inner">&nbsp;мои&nbsp;чеки&nbsp;мои&nbsp;чеки&nbsp;мои&nbsp;чеки</div>
-            <div class="runText__inner">мои&nbsp;чеки&nbsp;мои&nbsp;чеки&nbsp;мои&nbsp;чеки&nbsp;</div>
+        <div class="error-status-block">
+          <div class="error-status-block__text">
+            <h1 class="title title--h1">404</h1>
+            <p>К сожалению, мы не можем найти то, что вы ищете. Возможно, ссылка устарела или страница была удалена.</p>
+            <a href="./" class="button">Вернуться на главную</a>
           </div>
         </div>
 
         <div class="planet planet--small cube">
           <img src="./assets/img/hero/planet_small.png" alt="Алёнка" />
-        </div>
-      </section>
-
-      <section class="section section--concave">
-        <div class="section-container">
-          <table class="winnersTable">
-            <thead>
-              <tr>
-                <th>Чек</th>
-                <th>Дата</th>
-                <th>Статус</th>
-                <th>Приз</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>125 1234 123456</td>
-                <td>дд.мм.гггг</td>
-                <td>На модерации</td>
-                <td class="waiting">Ожидает розыгрыша</td>
-              </tr>
-              <tr>
-                <td>125 1234 123456</td>
-                <td>дд.мм.гггг</td>
-                <td>Ожидает</td>
-                <td class="confirm">Космический конструктор</td>
-              </tr>
-              <tr>
-                <td>125 1234 123456</td>
-                <td>дд.мм.гггг</td>
-                <td>Принят</td>
-                <td class="confirm">Набор продукции Алёнка</td>
-              </tr>
-              <tr>
-                <td>125 1234 123456</td>
-                <td>дд.мм.гггг</td>
-                <td>Принят</td>
-                <td class="confirm">Набор продукции Алёнка</td>
-              </tr>
-              <tr>
-                <td>125 1234 123456</td>
-                <td>дд.мм.гггг</td>
-                <td>Принят</td>
-                <td class="confirm">Набор продукции Алёнка</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="pagination">
-            <a href="#" class="pagination-btn" aria-label="left pagination">
-              <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 1L2 7.5L8 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </a>
-            <a href="#" class="pagination-btn active">1</a>
-            <a href="#" class="pagination-btn">2</a>
-            <a href="#" class="pagination-btn">3</a>
-            <a href="#" class="pagination-btn">4</a>
-            <a href="#" class="pagination-btn" aria-label="right pagination">
-              <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1L7 7.5L1 14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </a>
-          </div>
-          <button type="button" data-modal="сheque" class="button button--big">
-            <span>ЗАРЕГИСТРИРОВАТЬ ЧЕК</span>
-            <img src="./assets/img/svg/arr-right.svg" alt="arrow" />
-          </button>
-        </div>
-      </section>
-
-      <!--Section--SLIDER-->
-      <section class="section section--slider">
-        <div class="space-bg">
-          <div class="stars-sky"></div>
-          <div class="stars-sky"></div>
-        </div>
-        <div class="section-container">
-          <h2 class="title title--h1">
-            Мои образы <br />из вселенной <br />
-            <span>«Взрывная карамель»</span> Алёнки
-          </h2>
-          <p class="subtitle subtitle--lk">
-            Поделись своим образом в ВК, указав группу <a href="#" target="_blank">@shopalenka</a> и получи шанс выиграть шоколадный набор!
-            <br />Подробности в <a href="#" target="_blank">правилах акции</a>.
-          </p>
-
-          <!--SWIPER SLIDER-->
-
-          <div class="swiper swiper--look">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="look">
-                  <img src="./assets/img/slider/slide1.jpg" alt="Мои образы из вселенной «Взрывная карамель»" />
-                  <div class="look__buttons">
-                    <a href="./assets/img/slider/slide1.jpg" class="button button--biege" target="_blank">Скачать</a>
-                    <a href="#" class="button button--biege vk">Поделиться</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="look">
-                  <img src="./assets/img/slider/slide2.jpg" alt="Мои образы из вселенной «Взрывная карамель»" />
-                  <div class="look__buttons">
-                    <a href="./assets/img/slider/slide2.jpg" class="button button--biege" target="_blank">Скачать</a>
-                    <a href="#" class="button button--biege vk">Поделиться</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="look look--rejected">
-                  <div class="rejected-photo">
-                    <img src="./assets/img/slider/slide_error.png" alt="Фото отклонено" />
-                    <h4>Фото не прошло модерацию</h4>
-                    <p>Убедись, что на фотографии именно ты, лицо не перекрыто <br />и повёрнуто на камеру</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="look">
-                  <img src="./assets/img/slider/slide3.jpg" alt="Мои образы из вселенной «Взрывная карамель»" />
-                  <div class="look__buttons">
-                    <a href="./assets/img/slider/slide3.jpg" class="button button--biege" target="_blank">Скачать</a>
-                    <a href="#" class="button button--biege vk">Поделиться</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--SWIPER SLIDER END-->
-
-          <div class="slider-button">
-            <a href="#" class="button button--big">
-              <span>СГЕНЕРИРОВАТЬ ЕЩЕ</span>
-              <img src="./assets/img/svg/arr-right.svg" alt="arrow" />
-            </a>
-            <p class="try-count">Израсходовано 3/5 попыток</p>
-          </div>
         </div>
       </section>
     </main>
@@ -685,8 +498,8 @@
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/history.js" type="module" defer></script>
+    <script src="./assets/js/test.js" type="module" defer></script>
     <script src="./assets/js/menu.js" type="module" defer></script>
     <script src="./assets/js/forms.js" type="module" defer></script>
     <script src="./assets/js/form-validation.js" type="module" defer></script>

@@ -1,7 +1,6 @@
 const steps = document.querySelectorAll('[data-step]');
 const substeps = document.querySelectorAll('[data-substep]');
 const stepButtons = document.querySelectorAll('[data-tostep]');
-const inputButtons = document.querySelectorAll('[data-input]');
 
 const closeAllSteps = () => {
   closeAllSubsteps();
@@ -60,12 +59,25 @@ stepButtons.forEach(button => {
   button.addEventListener('click', handleStepButtonClick);
 });
 
-const handleChangeInputValues = e => {
-  const inputClass = e.target.dataset.input;
-  const inputValue = e.target.innerText;
-  document.querySelector(`.${inputClass}`).value = inputValue;
+// ОТПРАВЛЯЕМ ФОРМУ С ИЗОБРАЖЕНИЕМ
+import { formValidation } from './form-validation.js';
+const testForm = document.querySelector('#test-form');
+
+// ВАЛИДАЦИЯ И ОБРАБОТКА ФОРМЫ "ТЕСТА" (#test-form)
+const handleTestFormSubmit = e => {
+  e.preventDefault();
+  if (!formValidation(e.target)) return;
+
+  // ТУТ КОД ОТПРАВКА ФОРМЫ ТЕСТА
+
+  // ...............
+
+  // =============================
+
+  // ЕСЛИ ОТПРАВКА УДАЧНАЯ ИДЁМ НА ШАГ С ПОЗДРАВЛЕНИЯМИ ИЛИ ОТКАЗОМ
+  goToSubstep(2);
 };
 
-inputButtons.forEach(button => {
-  button.addEventListener('click', handleChangeInputValues);
-});
+if (testForm) {
+  testForm.addEventListener('submit', handleTestFormSubmit);
+}
