@@ -3597,7 +3597,7 @@ section {
   top: 0px;
   width: 100%;
   height: 100vh;
-  background: rgba(110, 30, 5, 0.9);
+  background: rgba(0, 0, 0, 0.4);
   opacity: 0;
   overflow-x: hidden;
   overflow-y: scroll;
