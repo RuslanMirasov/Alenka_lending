@@ -1,6 +1,7 @@
 const steps = document.querySelectorAll('[data-step]');
 const substeps = document.querySelectorAll('[data-substep]');
 const stepButtons = document.querySelectorAll('[data-tostep]');
+const inputButtons = document.querySelectorAll('[data-input]');
 
 const closeAllSteps = () => {
   closeAllSubsteps();
@@ -59,22 +60,42 @@ stepButtons.forEach(button => {
   button.addEventListener('click', handleStepButtonClick);
 });
 
-// ОТПРАВЛЯЕМ ФОРМУ С ИЗОБРАЖЕНИЕМ
-import { formValidation } from './form-validation.js';
-const testForm = document.querySelector('#test-form');
+const handleChangeInputValues = e => {
+  const inputClass = e.target.dataset.input;
+  const inputValue = e.target.innerText;
+  document.querySelector(`.${inputClass}`).value = inputValue;
+};
 
-// ВАЛИДАЦИЯ И ОБРАБОТКА ФОРМЫ "ТЕСТА" (#test-form)
+inputButtons.forEach(button => {
+  button.addEventListener('click', handleChangeInputValues);
+});
+
+window.closeAllSteps = closeAllSteps;
+window.goToStep = goToStep;
+window.goToSubstep = goToSubstep;
+
+//ВАЛИДАЦИЯ И ОБРАБОТКА ФОРМЫ "ТЕСТА" (#test-form)
+const testForm = document.getElementById('test-form');
+
 const handleTestFormSubmit = e => {
   e.preventDefault();
+  const fileLabel = e.target.querySelector(".label-for-file");
+  const resetButton = e.target.querySelector(".file-reset");
+
+  //Проходим валидацию
   if (!formValidation(e.target)) return;
 
-  // ТУТ КОД ОТПРАВКА ФОРМЫ ТЕСТА
+  // Если прошли валидацию, выполняем функцию registerEvent
+  registerEvent('passedTest');
 
-  // ...............
+  // Очищаем форму
+  e.target.reset();
+  fileLabel.style.removeProperty('--uploaded-image');
+  fileLabel.style.background = "none";
+  fileLabel.classList.remove('loaded');
+  resetButton?.remove();
 
-  // =============================
-
-  // ЕСЛИ ОТПРАВКА УДАЧНАЯ ИДЁМ НА ШАГ С ПОЗДРАВЛЕНИЯМИ ИЛИ ОТКАЗОМ
+  // Переходим к шагу с результатами
   goToSubstep(2);
 };
 
