@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
           centeredSlides: false,
         },
         0: {
-          spaceBetween: 26,
+          spaceBetween: 14,
           centeredSlides: true,
         },
       },

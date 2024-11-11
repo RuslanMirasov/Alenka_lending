@@ -57,7 +57,7 @@
                 <li><a href="#" class="menu__link" data-history>История</a></li>
                 <li><a href="#rules" class="menu__link" data-scrollto>Правила</a></li>
                 <li><a href="#prizes" class="menu__link" data-scrollto>Призы</a></li>
-                <li><a href="#test" class="menu__link" data-scrollto>Тест</a></li>
+                <li><a href="#test" class="menu__link" data-scrollto>Получить аватарку</a></li>
                 <li><a href="#winners" class="menu__link" data-scrollto>Победители</a></li>
                 <li><a href="#" class="menu__link" data-modal="callback">Обратная связь</a></li>
                 <li>
@@ -317,7 +317,7 @@
                   <!--Фото не прошло модерацию конец-->
 
                   <!--Поделись своей фотографией в VK-->
-                  <!-- <div class="step__text final">
+                  <div class="step__text final">
                     <div class="shere-block shere-block--mini">
                       <div class="shere-block__image">
                         <img src="./assets/img/hero/shere.jpg" alt="Поделиться в вк" class="my-look" />
@@ -337,7 +337,7 @@
                       Подробности в <a href="#" target="_blank">правилах акции</a>.
                     </b>
                     <button type="button" class="button button--biege" data-modal="registration">Зарегистрироваться</button>
-                  </div> -->
+                  </div>
                   <!--Поделись своей фотографией в VK конец-->
                 </div>
               </div>
@@ -427,6 +427,50 @@
           </div>
         </div>
       </section>
+
+      <!--Section--BROADCAST-->
+      <section class="section section--broadcast" id="broadcast">
+        <div class="space-bg">
+          <div class="stars-sky"></div>
+          <div class="stars-sky"></div>
+        </div>
+        <div class="section-container">
+          <h2 class="title title--h2">Определение победителей</h2>
+          <div class="broadcast" data-timer>
+            <h3 class="title">До прямого эфира для выбора победителей</h3>
+            <ul class="date-counter">
+              <li>
+                <span>дни</span>
+                <p data-js="timer-days">0</p>
+              </li>
+              <li>
+                <span>часы</span>
+                <p data-js="timer-hours">0</p>
+              </li>
+              <li>
+                <span>минуты</span>
+                <p data-js="timer-minutes">0</p>
+              </li>
+            </ul>
+            <div class="vk-videobroadcast">
+              <iframe
+                src="https://vk.com/video_ext.php?oid=-5608057&id=456244707&hd=1&autoplay=1"
+                allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <!-- <button type="button">
+                <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M105.867 199.987H94.1501C93.6492 199.878 93.1482 199.701 92.6434 199.666C78.6172 198.719 65.2915 195.091 53.0656 188.215C20.3131 169.794 2.4516 141.707 0.181737 104.179C-1.0119 84.4708 3.68045 65.8501 14.0749 49.0296C33.0673 18.2886 60.8223 1.88303 96.9405 0.114099C112.653 -0.652957 127.807 2.45049 141.974 9.33443C172.953 24.3938 191.844 48.9044 198.431 82.7723C199.159 86.5176 199.487 90.345 200 94.1333V105.851C199.887 106.41 199.706 106.97 199.667 107.533C198.693 121.481 195.002 134.697 188.255 146.915C172.699 175.077 149.077 192.324 117.428 198.406C113.612 199.138 109.722 199.467 105.867 199.983V199.987ZM71.4593 99.9606C71.4593 109.263 71.4358 118.566 71.4671 127.864C71.4906 134.165 76.6996 137.492 82.2959 134.709C100.909 125.454 119.486 116.139 138.076 106.837C140.874 105.436 142.827 103.33 142.835 100.043C142.843 96.685 140.929 94.5716 138.001 93.1197C119.569 83.9464 101.163 74.7221 82.7382 65.5331C76.6174 62.4805 71.475 65.6387 71.4632 72.4405C71.4476 81.6139 71.4632 90.7833 71.4632 99.9567L71.4593 99.9606Z"
+                    fill="white"
+                  />
+                </svg>
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
@@ -448,6 +492,11 @@
         <div class="modal" id="login">
           <button type="button" class="modal__close"></button>
           <h2 class="modal__title">Авторизация</h2>
+
+          <div class="vk-login">
+            <button type="button" class="button button--submit vk full">вход через</button>
+          </div>
+
           <form action="https://mirasov.dev/" method="POST" class="form" id="login-form" novalidate>
             <label class="label">
               <p class="label__text">Email</p>
@@ -817,6 +866,7 @@
     </div>
 
     <script src="./assets/js/history.js" type="module" defer></script>
+    <script src="./assets/js/timer.js" type="module" defer></script>
     <script src="./assets/js/test.js" type="module" defer></script>
     <script src="./assets/js/menu.js" type="module" defer></script>
     <script src="./assets/js/forms.js" type="module" defer></script>

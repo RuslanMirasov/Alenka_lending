@@ -16,9 +16,9 @@
   --menu-gradient: linear-gradient(120deg, #f4db6c, #fff8d8, #f4db6c);
   --modal-bg-radial: radial-gradient(#d3c587 0%, #f4db6c 100%);
   --modal-bg: linear-gradient(90deg, rgba(244, 219, 108, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(244, 219, 108, 1) 100%);
-  --paragmatica: 'Pragmatica regular', verdana;
-  --paragmatica-bold: 'Pragmatica bold', verdana;
-  --serif: 'serif', sans-serif;
+  --paragmatica: "Pragmatica regular", verdana;
+  --paragmatica-bold: "Pragmatica bold", verdana;
+  --serif: "serif", sans-serif;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -79,22 +79,22 @@
 }
 
 @font-face {
-  font-family: 'Pragmatica regular';
-  src: url('../fonts/ok-pragmatica-regular.woff2') format('woff2'), url('../fonts/ok-pragmatica-regular.woff') format('woff');
+  font-family: "Pragmatica regular";
+  src: url("../fonts/ok-pragmatica-regular.woff2") format("woff2"), url("../fonts/ok-pragmatica-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Pragmatica bold';
-  src: url('../fonts/ok-pragmatica-bold.woff2') format('woff2'), url('../fonts/ok-pragmatica-bold.woff') format('woff');
+  font-family: "Pragmatica bold";
+  src: url("../fonts/ok-pragmatica-bold.woff2") format("woff2"), url("../fonts/ok-pragmatica-bold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'serif';
-  src: url('../fonts/serif.woff2') format('woff2'), url('../fonts/serif.woff') format('woff');
+  font-family: "serif";
+  src: url("../fonts/serif.woff2") format("woff2"), url("../fonts/serif.woff") format("woff");
   font-weight: 400;
   font-style: oblique;
   font-display: swap;
@@ -154,7 +154,7 @@ a {
 }
 
 .cube:before {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   padding-top: 100%;
@@ -170,8 +170,8 @@ ol {
   list-style: none;
 }
 
-input[type='date'],
-input[type='time'] {
+input[type=date],
+input[type=time] {
   width: 100%;
   min-width: 100%;
   -webkit-appearance: none;
@@ -384,11 +384,11 @@ h6 {
 }
 
 #uploadCheck button.dz-button:before {
-  content: '';
+  content: "";
   display: block;
   width: 38px;
   height: 38px;
-  background: url('../img/svg/plus.svg') no-repeat center center/cover;
+  background: url("../img/svg/plus.svg") no-repeat center center/cover;
   margin: 0 auto;
 }
 
@@ -450,7 +450,7 @@ h6 {
 
 #uploadCheck a.dz-remove:before,
 #uploadCheck a.dz-remove:after {
-  content: '';
+  content: "";
   width: 14px;
   height: 2px;
   border-radius: 2px;
@@ -622,7 +622,7 @@ h6 {
   }
 }
 .history-text__list li:before {
-  content: '“';
+  content: "“";
   font-size: 300px;
   line-height: 0.5;
   position: absolute;
@@ -657,7 +657,7 @@ h6 {
 }
 
 .meteorits {
-  background: url('../img/history/meteorites.png') no-repeat right top;
+  background: url("../img/history/meteorites.png") no-repeat right top;
   background-size: auto 100%;
   transform: scale(1) translate(40%, -40%);
   opacity: 0;
@@ -665,13 +665,13 @@ h6 {
 
 @media screen and (max-width: 1023px) {
   .meteorits {
-    background: url('../img/history/meteorites_mobil.png') no-repeat right top;
+    background: url("../img/history/meteorites_mobil.png") no-repeat right top;
     background-size: 100% auto;
     transform: scale(1) translate(50%, -20%);
   }
 }
 .magnit-galaxy {
-  background: url('../img/history/magneto.png') no-repeat right top;
+  background: url("../img/history/magneto.png") no-repeat right top;
   background-size: auto 80%;
   transform: scale(1) translate(40%, -40%);
   opacity: 0;
@@ -679,7 +679,7 @@ h6 {
 
 @media screen and (max-width: 1023px) {
   .magnit-galaxy {
-    background: url('../img/history/magneto_mobil.png') no-repeat center top;
+    background: url("../img/history/magneto_mobil.png") no-repeat center top;
     background-size: 140% auto;
   }
 }
@@ -871,20 +871,20 @@ h6 {
   }
 }
 .home-inside {
-  background: url('../img/history/home_inside.png') no-repeat center center/cover;
+  background: url("../img/history/home_inside.png") no-repeat center center/cover;
   transform: scale(2) translate(0%, 20%);
   opacity: 0;
 }
 
 @media screen and (max-width: 1023px) {
   .home-inside {
-    background: url('../img/history/home_inside_mobil.png') no-repeat center center/cover;
+    background: url("../img/history/home_inside_mobil.png") no-repeat center center/cover;
     transform: scale(5) translate(0%, 5%);
   }
 }
 .home-outside {
   height: 200%;
-  background: url('../img/history/home.png') no-repeat center bottom/cover;
+  background: url("../img/history/home.png") no-repeat center bottom/cover;
   transform: scale(1.7) translate(0%, 50%);
   opacity: 1;
 }
@@ -893,7 +893,7 @@ h6 {
   .home-outside {
     height: 125%;
     transform: scale(1) translate(0%, 110%);
-    background: url('../img/history/home_mobil.png') no-repeat center bottom/cover;
+    background: url("../img/history/home_mobil.png") no-repeat center bottom/cover;
   }
 }
 .scene--7 .final-slide {
@@ -1036,7 +1036,7 @@ h6 {
 @media screen and (max-width: 1023px) {
   .scene--2 .home-outside {
     height: 100%;
-    transform: scale(1) translate(0%, -0%);
+    transform: scale(1) translate(0%, 0%);
   }
 }
 .scene--2 .history-text {
@@ -1150,7 +1150,7 @@ h6 {
 }
 
 .promo__image:before {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   padding-top: 100%;
@@ -2341,7 +2341,7 @@ h6 {
 }
 
 .section--concave::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 45px;
   top: -45px;
@@ -2357,7 +2357,7 @@ h6 {
 }
 
 .section--concave::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 45px;
   left: 0;
@@ -2516,7 +2516,7 @@ h6 {
 }
 
 .look:before {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   padding-top: 135%;
@@ -2767,13 +2767,26 @@ h6 {
   position: relative;
 }
 
+.shere-block .shere-block__image:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: radial-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 100%);
+  z-index: 1;
+}
+
 @media screen and (max-width: 1023px) {
   .shere-block .shere-block__image {
     width: 100%;
     height: auto;
   }
   .shere-block .shere-block__image:before {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     padding-top: 100%;
@@ -2798,6 +2811,7 @@ h6 {
   align-items: center;
   align-content: center;
   gap: 60px;
+  z-index: 2;
 }
 
 @media screen and (max-width: 767px) {
@@ -3012,7 +3026,7 @@ section {
   height: 100%;
   overflow: hidden;
   z-index: 0;
-  background: var(--bg) url('../img/svg/space.svg') repeat left top;
+  background: var(--bg) url("../img/svg/space.svg") repeat left top;
 }
 
 .space-bg img {
@@ -3071,7 +3085,7 @@ section {
   }
 }
 .space-bg:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0px;
   top: 0px;
@@ -3103,31 +3117,31 @@ section {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: url('../img/svg/space.svg') repeat left top;
+  background: url("../img/svg/space.svg") repeat left top;
   background-size: 200px 200px;
 }
 
 .stars-sky:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0px;
   top: 0px;
   width: 100%;
   height: 100%;
-  background: url('../img/svg/space.svg') repeat left top;
+  background: url("../img/svg/space.svg") repeat left top;
   -webkit-animation: fadeOut 2s ease-in-out infinite;
   animation: fadeOut 2s ease-in-out infinite;
   transform: rotate(45deg) scale(1.3);
 }
 
 .stars-sky:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0px;
   top: 0px;
   width: 100%;
   height: 100%;
-  background: url('../img/svg/space.svg') repeat left top;
+  background: url("../img/svg/space.svg") repeat left top;
   -webkit-animation: fadeOut 3s ease-in-out infinite;
   animation: fadeOut 3s ease-in-out infinite;
   transform: rotate(-35deg) scale(1);
@@ -3254,7 +3268,7 @@ section {
 
 @media screen and (min-width: 1280px) {
   .logo {
-    gap: 32px;
+    gap: 14px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -3285,7 +3299,7 @@ section {
   justify-content: flex-end;
   align-items: center;
   align-content: center;
-  gap: 16px;
+  gap: 14px;
 }
 
 .header__buttons .button.button--icon {
@@ -3341,7 +3355,7 @@ section {
 
 .burger:before,
 .burger:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 3px;
@@ -3496,7 +3510,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    max-width: 200px;
+    max-width: 260px;
     width: 100%;
   }
   .menu__list li {
@@ -3533,14 +3547,27 @@ section {
     flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 1024px) and (min-width: 1280px) {
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
   .menu__list {
-    gap: 32px;
+    gap: 16px;
   }
 }
-@media screen and (min-width: 1024px) and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .header__buttons button.button {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .logo {
+    gap: 14px;
+  }
+  .header .menu__list > li > .menu__link {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1366px) {
   .menu__list {
-    gap: 20px;
+    gap: 32px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -3565,7 +3592,7 @@ section {
 }
 @media screen and (min-width: 1024px) {
   .menu__list > li > .menu__link:before {
-    content: '';
+    content: "";
     width: 0%;
     height: 2px;
     background: var(--nav-link-color);
@@ -3702,8 +3729,8 @@ section {
     font-size: 18px;
   }
   .button.button--big img,
-  .button.button--big svg,
-  .button.button--big picture {
+.button.button--big svg,
+.button.button--big picture {
     width: 20px;
   }
 }
@@ -3716,22 +3743,30 @@ section {
   box-shadow: -4px 6px 0px 0px var(--red);
 }
 
-@media screen and (max-width: 767px) {
-  .button.button--biege.vk {
-    gap: 10px;
-  }
+.button.vk:after {
+  content: "";
+  width: 24px;
+  height: 14px;
+  background: url("../img/svg/vk_white.svg") no-repeat center center/cover;
 }
+
 .button.button--biege.vk:after {
-  content: '';
   width: 26px;
   height: 16px;
-  background: url('../img/svg/vk.svg') no-repeat center center/cover;
+  background: url("../img/svg/vk.svg") no-repeat center center/cover;
 }
 
 @media screen and (max-width: 767px) {
+  .button.vk {
+    gap: 8px;
+  }
   .button.button--biege.vk:after {
     width: 17px;
     height: 10px;
+  }
+  .button.button--submit.vk:after {
+    width: 22px;
+    height: 14px;
   }
 }
 .button.button--blue {
@@ -3745,7 +3780,7 @@ section {
 }
 
 .button.button--blue img {
-  width: 18px;
+  width: 16px;
   height: 18px;
 }
 
@@ -3854,7 +3889,7 @@ section {
 }
 
 .modal:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0px;
   top: 0px;
@@ -3900,7 +3935,7 @@ section {
 .modal__close::after,
 .file-reset::before,
 .file-reset::after {
-  content: '';
+  content: "";
   width: 18px;
   height: 2px;
   border-radius: 2px;
@@ -4166,7 +4201,7 @@ h2.modal__title {
 
 .checkbox + .label__text:before,
 .checkbox + .label__text:after {
-  content: '';
+  content: "";
   position: absolute;
   transition: 0.3s;
   cursor: pointer;
@@ -4262,7 +4297,7 @@ h2.modal__title {
 }
 
 .label-for-file.loaded::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -4274,10 +4309,10 @@ h2.modal__title {
 }
 
 .label-for-file.loaded::after {
-  background-image: url('');
+  background-image: url("");
 }
 
-input[type='password'] {
+input[type=password] {
   padding-right: 36px;
 }
 
@@ -4291,7 +4326,7 @@ input[type='password'] {
   cursor: pointer;
   outline: none;
   -webkit-tap-highlight-color: transparent;
-  background: url('../img/svg/password2.svg') no-repeat center center/cover;
+  background: url("../img/svg/password2.svg") no-repeat center center/cover;
   z-index: 2;
 }
 
@@ -4300,7 +4335,7 @@ input[type='password'] {
 }
 
 .show-password.is-show {
-  background: url('../img/svg/password.svg') no-repeat center center/cover;
+  background: url("../img/svg/password.svg") no-repeat center center/cover;
 }
 
 .runText {
@@ -4326,12 +4361,12 @@ input[type='password'] {
   flex-wrap: nowrap;
 }
 
-[data-runtext='left'] .runText__inner:first-child {
+[data-runtext=left] .runText__inner:first-child {
   -webkit-animation: 50s linear infinite moveLeft;
   animation: 50s linear infinite moveLeft;
 }
 
-[data-runtext='left'] .runText__inner:last-child {
+[data-runtext=left] .runText__inner:last-child {
   -webkit-animation: 50s linear infinite moveLeftCopy;
   animation: 50s linear infinite moveLeftCopy;
 }
@@ -4618,21 +4653,21 @@ input[type='password'] {
 }
 @media screen and (min-width: 1024px) {
   .winnersTable td.waiting,
-  .winnersTable td.confirm,
-  .winnersTable td.rejected,
-  .winnersTable th.waiting,
-  .winnersTable th.confirm,
-  .winnersTable th.rejected {
+.winnersTable td.confirm,
+.winnersTable td.rejected,
+.winnersTable th.waiting,
+.winnersTable th.confirm,
+.winnersTable th.rejected {
     position: relative;
     padding-left: 30px;
   }
   .winnersTable td.waiting:before,
-  .winnersTable td.confirm:before,
-  .winnersTable td.rejected:before,
-  .winnersTable th.waiting:before,
-  .winnersTable th.confirm:before,
-  .winnersTable th.rejected:before {
-    content: '';
+.winnersTable td.confirm:before,
+.winnersTable td.rejected:before,
+.winnersTable th.waiting:before,
+.winnersTable th.confirm:before,
+.winnersTable th.rejected:before {
+    content: "";
     width: 24px;
     height: 24px;
     background: red;
@@ -4641,16 +4676,16 @@ input[type='password'] {
     top: 2px;
   }
   .winnersTable td.waiting:before,
-  .winnersTable th.waiting:before {
-    background: url('../img/svg/waiting.svg') no-repeat center center;
+.winnersTable th.waiting:before {
+    background: url("../img/svg/waiting.svg") no-repeat center center;
   }
   .winnersTable td.confirm:before,
-  .winnersTable th.confirm:before {
-    background: url('../img/svg/prize.svg') no-repeat center center;
+.winnersTable th.confirm:before {
+    background: url("../img/svg/prize.svg") no-repeat center center;
   }
   .winnersTable td.rejected:before,
-  .winnersTable th.rejected:before {
-    background: url('../img/svg/reject.svg') no-repeat center center;
+.winnersTable th.rejected:before {
+    background: url("../img/svg/reject.svg") no-repeat center center;
   }
 }
 .winnersTable td:nth-child(1),
@@ -4675,51 +4710,51 @@ input[type='password'] {
 
 @media screen and (max-width: 1023px) {
   .winnersTable td,
-  .winnersTable th {
+.winnersTable th {
     font-size: 18px;
     padding: 5px;
   }
   .winnersTable td:nth-child(1),
-  .winnersTable th:nth-child(1) {
+.winnersTable th:nth-child(1) {
     min-width: 90px;
     padding-left: 0px;
   }
   .winnersTable td:nth-child(2),
-  .winnersTable th:nth-child(2) {
+.winnersTable th:nth-child(2) {
     min-width: 120px;
   }
   .winnersTable td:nth-child(3),
-  .winnersTable th:nth-child(3) {
+.winnersTable th:nth-child(3) {
     min-width: 120px;
   }
   .winnersTable td:nth-child(4),
-  .winnersTable th:nth-child(4) {
+.winnersTable th:nth-child(4) {
     min-width: 220px;
     padding-right: 0px;
   }
 }
 @media screen and (max-width: 767px) {
   .winnersTable td,
-  .winnersTable th {
+.winnersTable th {
     font-size: 11px;
   }
   .winnersTable td:nth-child(1),
-  .winnersTable th:nth-child(1) {
+.winnersTable th:nth-child(1) {
     min-width: auto;
     white-space: nowrap;
   }
   .winnersTable td:nth-child(2),
-  .winnersTable th:nth-child(2) {
+.winnersTable th:nth-child(2) {
     min-width: auto;
     white-space: nowrap;
   }
   .winnersTable td:nth-child(3),
-  .winnersTable th:nth-child(3) {
+.winnersTable th:nth-child(3) {
     min-width: auto;
     white-space: nowrap;
   }
   .winnersTable td:nth-child(4),
-  .winnersTable th:nth-child(4) {
+.winnersTable th:nth-child(4) {
     min-width: auto;
   }
 }
@@ -4730,7 +4765,7 @@ input[type='password'] {
   justify-content: center;
   align-items: center;
   align-content: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 @media screen and (max-width: 767px) {
@@ -4799,4 +4834,107 @@ input[type='password'] {
   .magnit-logo2 img {
     width: 110px;
   }
+}
+@media screen and (max-width: 1023px) {
+  .shere-block .shere-block__image .my-look {
+    position: relative;
+  }
+}
+.hero .hero__text .title.title--h1:before {
+  content: "c 3 октября по 17 ноября";
+  display: inline-block;
+  font-size: 16px;
+  color: var(--biege);
+  font-family: var(--paragmatica);
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: var(--red);
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .hero .hero__text .title.title--h1:before {
+    font-size: 12px;
+  }
+}
+.vk-login {
+  display: block;
+  width: 100%;
+  max-width: 288px;
+  padding-top: 10px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid rgba(166, 43, 43, 0.1);
+}
+
+.section--broadcast {
+  padding: 100px 0px 0px 0px;
+}
+.section--broadcast .section-container {
+  justify-content: center;
+}
+.section--broadcast .title--h2 {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  color: var(--biege);
+}
+
+.broadcast {
+  display: flex;
+  position: relative;
+  width: 100%;
+  min-height: 720px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 54px;
+  border-radius: 46px;
+  overflow: hidden;
+  z-index: 1;
+  background: radial-gradient(70% 243.12% at 49.62% 52.62%, #ffffff 0%, #f4db6c 100%);
+}
+.broadcast .title {
+  font-size: 64px;
+  line-height: 1.05;
+  text-align: center;
+}
+.broadcast .date-counter {
+  margin: 0;
+}
+.broadcast .vk-videobroadcast {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.broadcast .vk-videobroadcast button {
+  position: absolute;
+  width: 200px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.3s;
+  border-radius: 100px;
+}
+.broadcast .vk-videobroadcast button:hover {
+  transform: scale(1.1);
+}
+.broadcast .vk-videobroadcast iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.broadcast[data-timer=off] {
+  background: rgba(0, 0, 0, 0);
+}
+.broadcast[data-timer=off] .title,
+.broadcast[data-timer=off] .date-counter {
+  display: none;
+}
+.broadcast[data-timer=off] .vk-videobroadcast {
+  display: flex;
 }
