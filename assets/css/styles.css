@@ -4873,6 +4873,7 @@ input[type=password] {
   justify-content: center;
 }
 .section--broadcast .title--h2 {
+  max-width: 710px;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 80px;
@@ -4882,6 +4883,7 @@ input[type=password] {
 .broadcast {
   display: flex;
   position: relative;
+  flex-direction: column;
   width: 100%;
   min-height: 720px;
   flex-wrap: wrap;
@@ -4937,4 +4939,38 @@ input[type=password] {
 }
 .broadcast[data-timer=off] .vk-videobroadcast {
   display: flex;
+}
+
+@media (max-width: 1279px) {
+  .section--broadcast {
+    padding: 100px 0px 0px 0px;
+  }
+  .section--broadcast .title--h2 {
+    margin-bottom: 60px;
+  }
+  .broadcast {
+    min-height: 500px;
+    gap: 40px;
+    border-radius: 32px;
+  }
+  .broadcast .title {
+    font-size: 54px;
+  }
+}
+@media (max-width: 767px) {
+  .section--broadcast {
+    padding: 74px 0px 0px 0px;
+  }
+  .section--broadcast .title--h2 {
+    font-size: 40px;
+    margin-bottom: 32px;
+  }
+  .broadcast {
+    min-height: 200px;
+    gap: 22px;
+    border-radius: 14px;
+  }
+  .broadcast .title {
+    font-size: 24px;
+  }
 }

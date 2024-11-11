@@ -37,5 +37,5 @@ function startCountdown(targetDateString) {
 }
 
 // const targetDate = '18 November 2024 14:00';
-const targetDate = '11 November 2024 16:30';
+const targetDate = '11 November 2024 17:20';
 startCountdown(targetDate);

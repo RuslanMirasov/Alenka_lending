@@ -36,20 +36,20 @@ const addError = (labelEl, inputEl, errorEl, errorText) => {
   inputEl.value = '';
 };
 
-// const resetAllForms = () => {
-//   forms.forEach(form => {
-//     form.reset();
-//     const fileLabel = form.querySelector('.label-for-file');
-//     if (fileLabel) {
-//       fileLabel.classList.remove('loaded');
-//       fileLabel.style.background = '';
-//       const resetButton = fileLabel.closest('.download-file').querySelector('.file-reset');
-//       if (resetButton) {
-//         resetButton.remove();
-//       }
-//     }
-//   });
-// };
+const resetAllForms = () => {
+  forms.forEach(form => {
+    form.reset();
+    const fileLabel = form.querySelector('.label-for-file');
+    if (fileLabel) {
+      fileLabel.classList.remove('loaded');
+      fileLabel.style.background = '';
+      const resetButton = fileLabel.closest('.download-file').querySelector('.file-reset');
+      if (resetButton) {
+        resetButton.remove();
+      }
+    }
+  });
+};
 
 // INPUT VALIDATION
 const inputValidation = input => {

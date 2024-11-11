@@ -1,3 +1,5 @@
+import { formValidation } from './form-validation.js';
+
 const steps = document.querySelectorAll('[data-step]');
 const substeps = document.querySelectorAll('[data-substep]');
 const stepButtons = document.querySelectorAll('[data-tostep]');
@@ -79,8 +81,8 @@ const testForm = document.getElementById('test-form');
 
 const handleTestFormSubmit = e => {
   e.preventDefault();
-  const fileLabel = e.target.querySelector(".label-for-file");
-  const resetButton = e.target.querySelector(".file-reset");
+  const fileLabel = e.target.querySelector('.label-for-file');
+  const resetButton = e.target.querySelector('.file-reset');
 
   //Проходим валидацию
   if (!formValidation(e.target)) return;
@@ -91,7 +93,7 @@ const handleTestFormSubmit = e => {
   // Очищаем форму
   e.target.reset();
   fileLabel.style.removeProperty('--uploaded-image');
-  fileLabel.style.background = "none";
+  fileLabel.style.background = 'none';
   fileLabel.classList.remove('loaded');
   resetButton?.remove();
 
