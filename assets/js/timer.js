@@ -15,7 +15,9 @@ function startCountdown(targetDateString) {
     const timeDifference = targetDate - now;
 
     if (timeDifference <= 0) {
-      timer.setAttribute('data-timer', 'off');
+      if (timer) {
+        timer.setAttribute('data-timer', 'off');
+      }
       clearInterval(countdownInterval);
       countdownElements.days.textContent = '0';
       countdownElements.hours.textContent = '0';
@@ -36,5 +38,5 @@ function startCountdown(targetDateString) {
   countdownInterval = setInterval(updateCountdown, 10000);
 }
 
-const targetDate = '18 November 2024 14:00';
+const targetDate = '18 November 2024 19:06';
 startCountdown(targetDate);
