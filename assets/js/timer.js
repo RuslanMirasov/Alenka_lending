@@ -1,7 +1,7 @@
 const timer = document.querySelector('[data-timer]');
 
 function startCountdown(targetDateString) {
-  const targetDate = new Date(targetDateString); // Преобразуем строку в дату
+  const targetDate = new Date(targetDateString);
   let countdownInterval;
 
   const countdownElements = {
@@ -33,9 +33,8 @@ function startCountdown(targetDateString) {
   }
 
   updateCountdown();
-  countdownInterval = setInterval(updateCountdown, 30000);
+  countdownInterval = setInterval(updateCountdown, 10000);
 }
 
-// const targetDate = '18 November 2024 14:00';
-const targetDate = '11 November 2024 17:35';
+const targetDate = '18 November 2024 14:00';
 startCountdown(targetDate);
