@@ -38,5 +38,5 @@ function startCountdown(targetDateString) {
   countdownInterval = setInterval(updateCountdown, 10000);
 }
 
-const targetDate = '18 November 2024 19:06';
+const targetDate = '11 November 2024 19:06';
 startCountdown(targetDate);
